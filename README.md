@@ -4,7 +4,7 @@ This is the repository for my GitHub Pages website. GitHub Pages allows you to h
 
 ## Live Website
 
-You can view the live website here: [Your GitHub Pages URL](https://yourusername.github.io/repository-name/)
+You can view the live website here: [Your GitHub Pages URL](https://cindy-comportementaliste.github.io/cindy-comportementaliste/)
 
 ## Getting Started
 
