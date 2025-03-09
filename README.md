@@ -12,11 +12,11 @@ To set up the project locally:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/repository-name.git
+   git clone [https://github.com/yourusername/repository-name.git](https://github.com/Frapar-git/cindy-comportementaliste.git)
    ```
 2. Navigate into the project directory:
    ```sh
-   cd repository-name
+   cd cindy-comportementaliste
    ```
 3. Open `index.html` in a web browser.
 
@@ -27,7 +27,7 @@ To set up the project locally:
    ```sh
    git add .
    git commit -m "Updated website content"
-   git push origin main
+   git push origin master
    ```
 3. GitHub Pages will automatically update with your latest changes.
 
