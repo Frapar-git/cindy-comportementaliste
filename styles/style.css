@@ -12,6 +12,10 @@ header {
     padding: 20px;
 }
 
+a {
+    font-family: 'Qarmic sans free', sans-serif;
+}
+
 nav a {
     color: #704b3e;
     margin: 0 15px;
