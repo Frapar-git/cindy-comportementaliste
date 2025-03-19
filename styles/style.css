@@ -1,21 +1,36 @@
+/* Global Styles */
 body {
     font-family: 'Cormorant Garamond', serif;
+    font-weight: 600; /* Bold */
     text-align: center;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
+/* Typography */
+a {
+    font-family: 'Qarmic sans free', sans-serif;
+}
+
+p {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300; /* Light */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; /* Bold */
+}
+
+/* Header */
 header {
     background: #fdf0ea;
     color: #704b3e;
     padding: 20px;
 }
 
-a {
-    font-family: 'Qarmic sans free', sans-serif;
-}
-
+/* Navigation */
 nav a {
     color: #704b3e;
     margin: 0 15px;
@@ -23,10 +38,12 @@ nav a {
     font-weight: bold;
 }
 
+/* Main Content */
 main {
     padding: 20px;
 }
 
+/* Footer */
 footer {
     background: #f7e4d9;
     color: #704b3e;
