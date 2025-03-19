@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             document.getElementById('header-placeholder').innerHTML = data;
             // Set the page title
-            document.getElementById('page-title').textContent = document.title;
+            const pageTitle = document.title;
+            document.getElementById('page-title').textContent = pageTitle;
         });
 
     // Load the footer
