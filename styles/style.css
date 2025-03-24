@@ -97,7 +97,7 @@ section {
     margin: 0 auto; /* Center the section */
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     background-color: #e0e0e0; /* Light gray background */
 }
 
