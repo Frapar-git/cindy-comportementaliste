@@ -61,12 +61,12 @@ section {
 }
 
 .main-photo-section {
-    position: relative;
+    width: 100%; /* Ensure the section is full width */
     padding: 0; /* Remove padding */
 }
 
 .main-photo {
-    width: 100%;
+    width: 100%; /* Ensure the image is full width */
     height: auto;
     display: block;
 }
