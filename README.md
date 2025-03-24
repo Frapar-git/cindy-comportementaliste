@@ -4,7 +4,7 @@ This is the repository for my GitHub Pages website. GitHub Pages allows you to h
 
 ## Live Website
 
-You can view the live website here: [Your GitHub Pages URL](https://cindy-comportementaliste.github.io/cindy-comportementaliste/html/)
+You can view the live website here: [Your GitHub Pages URL]([https://cindy-comportementaliste.github.io/cindy-comportementaliste/html/](https://frapar-git.github.io/cindy-comportementaliste/html/index.html))
 
 ## Getting Started
 
