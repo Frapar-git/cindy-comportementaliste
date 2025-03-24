@@ -53,6 +53,25 @@ footer {
     width: 100%;
 }
 
+/* Section Styles */
+.section-one {
+    background-color: #ffcccc; /* Light Red */
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.section-two {
+    background-color: #ccffcc; /* Light Green */
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.section-three {
+    background-color: #ccccff; /* Light Blue */
+    padding: 20px;
+    margin: 20px 0;
+}
+
 /* Button Styles */
 .button {
     display: inline-block;
