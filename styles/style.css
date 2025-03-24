@@ -25,8 +25,8 @@ h1 {
 
 /* Header */
 header {
-    background: #fdf0ea;
-    color: #ffe4d4;
+    background: #ffe4d4;
+    color: #704b3e;
     padding: 20px;
 }
 
@@ -77,4 +77,51 @@ footer {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Product */
+.product {
+    position: relative;
+    width: 30%;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.product:hover .overlay {
+    opacity: 1;
+}
+
+.product .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
