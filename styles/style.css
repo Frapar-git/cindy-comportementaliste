@@ -60,30 +60,40 @@ footer {
 
 
 /* Section Styles */
+section {
+    padding: 20px;
+}
+
 .section-one {
     background-color: #ffcccc; /* Light Red */
-    padding: 20px;
-    margin: 20px 0;
 }
 
 .section-two {
-    background-color: #ccffcc; /* Light Green */
-    padding: 20px;
-    margin: 20px 0;
+    background-color: #ccccff; /* Light Blue */
 }
 
 .section-three {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
     background-color: #e0e0e0; /* Light gray background */
 }
 
 .section-four {
     background-color: #ccccff; /* Light Blue */
+}
+
+.left-column, .right-column {
+    width: 48%; /* Adjust the width as needed */
     padding: 20px;
-    margin: 20px 0;
+    background-color: #fff; /* White background for columns */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
+    box-sizing: border-box;
+}
+
+.right-column p {
+    max-width: 400px; /* Limit the text length */
+    margin: 0 auto;
 }
 
 
