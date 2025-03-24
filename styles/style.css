@@ -8,6 +8,7 @@ body {
     background-color: #f4f4f4;
 }
 
+
 /* Typography */
 a {
     font-family: 'Qarmic sans free', sans-serif;
@@ -23,12 +24,14 @@ h1 {
     font-weight: 700; /* Bold */
 }
 
+
 /* Header */
 header {
     background: #ffe4d4;
     color: #704b3e;
     padding: 20px;
 }
+
 
 /* Navigation */
 nav a {
@@ -38,10 +41,12 @@ nav a {
     font-weight: bold;
 }
 
+
 /* Main Content */
 main {
     padding: 20px;
 }
+
 
 /* Footer */
 footer {
@@ -52,6 +57,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 
 /* Section Styles */
 .section-one {
@@ -67,10 +73,19 @@ footer {
 }
 
 .section-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #e0e0e0; /* Light gray background */
+}
+
+.section-four {
     background-color: #ccccff; /* Light Blue */
     padding: 20px;
     margin: 20px 0;
 }
+
 
 /* Button Styles */
 .button {
@@ -98,6 +113,7 @@ footer {
     transform: translateY(4px);
 }
 
+
 /* Product Container */
 .product-container {
     display: flex;
@@ -105,6 +121,7 @@ footer {
     align-items: center;
     margin: 20px 0;
 }
+
 
 /* Product */
 .product {
