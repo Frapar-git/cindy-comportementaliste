@@ -90,6 +90,7 @@ section {
 
 .section-two {
     background-color: #ccccff; /* Light Blue */
+    max-width: 800px; /* Adjust the width as needed */
 }
 
 .section-three {
