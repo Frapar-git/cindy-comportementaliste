@@ -26,7 +26,7 @@ h1 {
 /* Header */
 header {
     background: #fdf0ea;
-    color: #704b3e;
+    color: #ffe4d4;
     padding: 20px;
 }
 
@@ -45,7 +45,7 @@ main {
 
 /* Footer */
 footer {
-    background: #f7e4d9;
+    background: #f8f4ec;
     color: #704b3e;
     padding: 10px;
     position: fixed;
