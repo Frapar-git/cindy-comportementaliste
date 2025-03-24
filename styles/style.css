@@ -26,7 +26,7 @@ h1, h2 {
 
 /* Header */
 header {
-    background: #ffe4d4;
+    background: #fdf0ea;
     color: #704b3e;
     padding: 20px;
 }
@@ -46,7 +46,7 @@ main {
 
 /* Footer */
 footer {
-    background: #f8f4ec;
+    background: #f6f3ef;
     color: #704b3e;
     padding: 10px;
     position: relative; /* Change from fixed to relative */
@@ -84,12 +84,12 @@ section {
 }
 
 .section-one {
-    background-color: #ffcccc; /* Light Red */
+    background-color: #f2f0ea; /* Light Red */
     margin-top: 0; /* Remove margin above the section */
 }
 
 .section-two {
-    background-color: #ccccff; /* Light Blue */
+    background-color: #f2f0ea; /* Light Blue */
     max-width: 800px; /* Adjust the width as needed */
 }
 
@@ -99,11 +99,11 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e0e0e0; /* Light gray background */
+    background-color: #f6f3ef; /* Light gray background */
 }
 
 .section-four {
-    background-color: #ccccff; /* Light Blue */
+    background-color: #ffffff; /* Light Blue */
 }
 
 .left-column, .right-column {
