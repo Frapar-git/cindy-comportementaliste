@@ -17,6 +17,7 @@ a {
 p {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300; /* Light */
+    text-align: justify; /* Justify text */
 }
 
 h1, h2 {
@@ -97,33 +98,6 @@ section {
 }
 
 
-/* Button Styles */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
-    border: 2px solid #704b3e; /* Brown border */
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-}
-
-.button:hover {
-    background-color: #3e8e41;
-}
-
-.button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
-
 /* Product Container */
 .product-container {
     display: flex;
@@ -170,4 +144,31 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: 2px solid #704b3e; /* Brown border */
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
