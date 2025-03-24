@@ -19,7 +19,7 @@ p {
     font-weight: 300; /* Light */
 }
 
-h1 {
+h1, h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 700; /* Bold */
 }
@@ -44,7 +44,7 @@ nav a {
 
 /* Main Content */
 main {
-    padding: 20px;
+    padding: 0px;
 }
 
 
