@@ -54,12 +54,8 @@ footer {
     width: 100%;
 }
 
-/* Section Styles */
-section {
-    max-width: 800px; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the section */
-}
 
+/* Main Photo style */
 .main-photo-section {
     width: 100%; /* Ensure the section is full width */
     padding: 0; /* Remove padding */
@@ -80,8 +76,16 @@ section {
     box-sizing: border-box;
 }
 
+
+/* Section Styles */
+section {
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the section */
+}
+
 .section-one {
     background-color: #ffcccc; /* Light Red */
+    margin-top: 0; /* Remove margin above the section */
 }
 
 .section-two {
