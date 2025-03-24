@@ -8,7 +8,6 @@ body {
     background-color: #f4f4f4;
 }
 
-
 /* Typography */
 a {
     font-family: 'Qarmic sans free', sans-serif;
@@ -25,14 +24,12 @@ h1, h2 {
     font-weight: 700; /* Bold */
 }
 
-
 /* Header */
 header {
     background: #ffe4d4;
     color: #704b3e;
     padding: 20px;
 }
-
 
 /* Navigation */
 nav a {
@@ -42,12 +39,10 @@ nav a {
     font-weight: bold;
 }
 
-
 /* Main Content */
 main {
     padding: 0px;
 }
-
 
 /* Footer */
 footer {
@@ -59,10 +54,28 @@ footer {
     width: 100%;
 }
 
-
 /* Section Styles */
 section {
     padding: 20px;
+}
+
+.main-photo-section {
+    position: relative;
+}
+
+.main-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for text container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
+    box-sizing: border-box;
 }
 
 .section-one {
@@ -97,7 +110,6 @@ section {
     margin: 0 auto;
 }
 
-
 /* Product Container */
 .product-container {
     display: flex;
@@ -105,7 +117,6 @@ section {
     align-items: center;
     margin: 20px 0;
 }
-
 
 /* Product */
 .product {
@@ -145,7 +156,6 @@ section {
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
 
 /* Button Styles */
 .button {
