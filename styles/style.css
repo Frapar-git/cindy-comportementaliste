@@ -39,6 +39,11 @@ nav a {
     font-weight: bold;
 }
 
+.nav-link.active {
+  color: orange;
+  font-weight: bold; /* Optional: Make the text bold */
+}
+
 /* Main Content */
 main {
     padding-bottom: 60px; /* Add padding to the bottom to ensure footer does not overlap content */
