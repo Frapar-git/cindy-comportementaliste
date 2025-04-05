@@ -187,3 +187,32 @@ section {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
+/* New Section Styles for Text and Image Layout */
+.section {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between text and image */
+    margin: 20px 0;
+}
+
+.section img {
+    max-width: 300px; /* Limit image size */
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* First section: Text on the left, image on the right */
+.section-left {
+    flex-direction: row;
+}
+
+/* Second section: Image on the left, text on the right */
+.section-right {
+    flex-direction: row-reverse;
+}
+
+/* Styling for text */
+.text {
+    max-width: 600px;
+}
