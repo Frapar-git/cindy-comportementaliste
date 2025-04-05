@@ -5,15 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Me contacter</title>
     <script src="../js/load-common.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <div id="header-placeholder">
     </div>
     <main>
-        <p>
-            N'hésite pas à me contacter sur mon mail : <a href="mailto:youremail@example.com">youremail@example.com</a>.
-            Miaou.
-        </p>
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h1>Demande d'informations</h1>
+            <p>
+                Pour toute question et / ou demande de rendez-vous, vous pouvez compléter le questionnaire ci-dessous.
+                Je vous recontacterai dans les plus brefs délais.
+            </p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="first-name">Prénom</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Nom</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Objet</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button">Envoyer</button>
+            </form>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location">
+            <h2>LOCALISATION</h2>
+            <p>34170 Castelnau le Lez, France</p>
+            <p>01 23 45 67 89</p>
+        </section>
+
+        <!-- Disclaimer Section -->
+        <section class="disclaimer">
+            <p>
+                Un comportementaliste ne se substitue pas au vétérinaire. Aussi, avant tout entretien, une consultation
+                chez le vétérinaire vous est demandée afin d'écarter toute cause clinique.
+            </p>
+        </section>
     </main>
     <div id="footer-placeholder">
     </div>
