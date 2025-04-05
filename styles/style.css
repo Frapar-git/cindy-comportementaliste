@@ -36,12 +36,12 @@ nav a {
     color: #704b3e;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .nav-link.active {
-  color: orange;
-  font-weight: bold; /* Optional: Make the text bold */
+  color: #c44c2a;
+  /* font-weight: bold; */
 }
 
 /* Main Content */
