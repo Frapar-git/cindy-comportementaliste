@@ -228,4 +228,6 @@ section {
 .text {
     max-width: 600px;
     text-align: justify; 
+    line-height: 1.6;
+    margin: 20px;
 }
