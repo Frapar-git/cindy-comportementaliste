@@ -200,9 +200,12 @@ section {
 /* New Section Styles for Text and Image Layout */
 .section {
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
     gap: 20px; /* Space between text and image */
-    margin: 20px 0;
+    margin: 20px auto; /* Center the section horizontally */
+    max-width: 1200px; /* Optional: Limit the width of the section */
+    min-height: 50vh; /* Ensure sections take up at least half the viewport height */
 }
 
 .section img {
@@ -224,4 +227,5 @@ section {
 /* Styling for text */
 .text {
     max-width: 600px;
+    text-align: justify; 
 }
