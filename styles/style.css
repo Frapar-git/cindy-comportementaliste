@@ -96,6 +96,7 @@ footer {
     overflow: hidden; /* Hide any part of the image that overflows */
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
+    position: relative; /* Allow the section to flow naturally */
 }
 
 .main-photo {
