@@ -115,6 +115,15 @@ section {
     padding: 20px; /* Add padding for spacing */
     box-sizing: border-box; /* Include padding in the width calculation */
     display: block; /* Ensure the content flows as a single block */
+    text-align: left; /* Align text to the left */
+}
+
+.section-div-one h1, 
+.section-div-one p, 
+.section-div-one a {
+    display: block; /* Ensure each element takes up the full width */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
 }
 
 .section-div-two {
