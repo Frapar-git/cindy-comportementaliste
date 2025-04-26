@@ -114,7 +114,6 @@ section {
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
     display: flex; /* Use flexbox to align the child div */
-    justify-content: center; /* Center the child div horizontally */
 }
 
 .section-div-two {
