@@ -146,7 +146,7 @@ section {
 .section-div-one h1{
     display: block; /* Ensure each element takes up the full width */
     margin: 0; /* Remove any default margin */
-    padding: 30px 0px 30px 0px; /* Remove any default padding */
+    padding: 30px 0px 40px 0px; /* Remove any default padding */
 }
 
 .section-div-one p{
@@ -251,21 +251,21 @@ section {
     background-color: #f2f0ea; /* Light Red */
     position: relative; /* Allow the section to flow naturally */
     width: 100%; /* Ensure it spans the full width */
-    padding: 0px 0px 30px 0px;
+    padding: 0px 0px 60px 0px;
 }
 
 .box-color-three {
     background: #f6f3ef; /* Light Gray */
     position: relative; /* Allow the section to flow naturally */
     width: 100%; /* Ensure it spans the full width */
-    padding: 0px 0px 30px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .box-color-four {
     background-color: #ffffff; /* Light Red */
     position: relative; /* Allow the section to flow naturally */
     width: 100%; /* Ensure it spans the full width */
-    padding: 0px 0px 30px 0px;
+    padding: 60px 0px 60px 0px;
 }
 
 /* ===========================
