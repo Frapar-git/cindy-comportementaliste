@@ -130,15 +130,25 @@ section {
 .section-div-one {
     max-width: 1200px; /* Adjust to your desired content width */
     margin: 0 auto; /* Center the content horizontally */
-    padding: 20px; /* Add padding for spacing */
+    padding: 20px 20px 50px 20px; /* Add padding for spacing */
     box-sizing: border-box; /* Include padding in the width calculation */
     display: block; /* Ensure the content flows as a single block */
     text-align: left; /* Align text to the left */
     width: 100%; /* Ensure the content takes up the full width of the container */
 }
 
-.section-div-one h1, 
-.section-div-one p, 
+.section-div-one h1{
+    display: block; /* Ensure each element takes up the full width */
+    margin: 0; /* Remove any default margin */
+    padding: 0px 0px 15px 0px; /* Remove any default padding */
+}
+
+.section-div-one p{
+    display: block; /* Ensure each element takes up the full width */
+    margin: 0; /* Remove any default margin */
+    padding: 0px 0px 5px 0px; /* Remove any default padding */
+}
+
 .section-div-one a {
     display: block; /* Ensure each element takes up the full width */
     margin: 0; /* Remove any default margin */
