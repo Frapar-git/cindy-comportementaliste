@@ -216,6 +216,12 @@ section {
 }
 
 /* Specific Background Colors */
+.box-photo {
+    position: relative; /* Allow the section to flow naturally */
+    width: 100%; /* Ensure it spans the full width */
+    padding: 0px 0px 0px 0px
+}
+
 .box-color-one {
     background-color: #f2f0ea; /* Light Red */
     position: relative; /* Allow the section to flow naturally */
