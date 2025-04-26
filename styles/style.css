@@ -205,7 +205,7 @@ section {
 
 /* Specific Background Colors */
 .box-color-one {
-  background-color: red; /* Light Red */
+  background-color: #f2f0ea; /* Light Red */
   height:100%;
   position:absolute;
   top:0px;
@@ -215,7 +215,7 @@ section {
 }
 
 .box-color-two {
-  background-color: yellow; /* Light Red */
+  background-color: #f2f0ea; /* Light Red */
   height:100%;
   position:absolute;
   top:0px;
@@ -225,7 +225,7 @@ section {
 }
 
 .box-color-three {
-  background:blue;
+  background: #f6f3ef;
   height:100%;
   position:absolute;
   top:0px;
@@ -235,7 +235,7 @@ section {
 }
 
 .box-color-four {
-   background-color: green; /* Light Red */
+   background-color: #ffffff; /* Light Red */
    height:100%;
    position:absolute;
    top:0px;
