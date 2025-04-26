@@ -10,6 +10,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/*
 html, body {
   margin:0px;
   height:100%;
@@ -24,6 +25,7 @@ html, body {
   left:0px;
   bottom:0px;
 }
+*/
 
 /* ===========================
    Typography
@@ -193,8 +195,8 @@ section {
 .left-column, .right-column {
     width: 48%; /* Adjust the width as needed */
     padding: 20px;
-    background-color: #fff; /* White background for columns */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
+    /* background-color: #fff; /* White background for columns */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
     box-sizing: border-box;
 }
 
@@ -226,6 +228,7 @@ section {
     background-color: #ffffff; /* Light Red */
     position: relative; /* Allow the section to flow naturally */
     width: 100%; /* Ensure it spans the full width */
+    padding: 0px 0px 100px 0px
 }
 
 /* ===========================
