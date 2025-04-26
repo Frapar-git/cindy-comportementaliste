@@ -10,6 +10,21 @@ body {
     background-color: #f4f4f4;
 }
 
+html, body {
+  margin:0px;
+  height:100%;
+}
+
+.box {
+  background:red;
+  height:100%;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:0px;
+  bottom:0px;
+}
+
 /* ===========================
    Typography
 =========================== */
@@ -189,22 +204,22 @@ section {
 }
 
 /* Specific Background Colors */
-.color-section-one {
+.box-color-one {
    background-color: red; /* Light Red */
    padding: 20px;
 }
 
-.color-section-two {
+.box-color-two {
    background-color: yellow; /* Light Red */
    padding: 20px;
 }
 
-.color-section-three {
+.box-color-three {
    background-color: blue; /* Light Red */
    padding: 20px;
 }
 
-.color-section-four {
+.box-color-four {
    background-color: green; /* Light Red */
    padding: 20px;
 }
