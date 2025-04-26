@@ -107,6 +107,7 @@ section {
     width: 100%; /* Ensure the background spans the full width */
     margin: 0 auto; /* Center the section */
     padding: 0; /* Remove any default padding */
+    justify-content: center; /* Center the content horizontally */
 }
 
 .section-div-one {
@@ -116,6 +117,7 @@ section {
     box-sizing: border-box; /* Include padding in the width calculation */
     display: block; /* Ensure the content flows as a single block */
     text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure the content takes up the full width of the container */
 }
 
 .section-div-one h1, 
@@ -142,6 +144,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%; /* Ensure the content takes up the full width of the container */
 }
 
 .section-div-four {
