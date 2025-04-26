@@ -190,19 +190,23 @@ section {
 
 /* Specific Background Colors */
 .color-section-one {
-background-color: red; /* Light Red */
+   background-color: red; /* Light Red */
+   padding: 20px;
 }
 
 .color-section-two {
-background-color: yellow; /* Light Red */
+   background-color: yellow; /* Light Red */
+   padding: 20px;
 }
 
 .color-section-three {
-background-color: blue; /* Light Red */
+   background-color: blue; /* Light Red */
+   padding: 20px;
 }
 
 .color-section-four {
-background-color: green; /* Light Red */
+   background-color: green; /* Light Red */
+   padding: 20px;
 }
 
 /* ===========================
