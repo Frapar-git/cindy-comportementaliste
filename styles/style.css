@@ -109,7 +109,31 @@ section {
     padding: 0; /* Remove any default padding */
 }
 
-.section-container {
+.section-div-one {
+    max-width: 1200px; /* Adjust to your desired content width */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.section-div-two {
+    max-width: 1200px; /* Adjust to your desired content width */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.section-div-three {
+    max-width: 1200px; /* Adjust to your desired content width */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-div-four {
     max-width: 1200px; /* Adjust to your desired content width */
     margin: 0 auto; /* Center the content */
     padding: 20px; /* Add padding for spacing */
@@ -129,10 +153,6 @@ section {
 
 .section-three {
     max-width: 800px; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the section */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #f6f3ef; /* Light gray background */
 }
 
