@@ -110,10 +110,11 @@ section {
 }
 
 .section-div-one {
-    width: 100%; /* Ensure the section spans the full width of the page */
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
-    display: flex; /* Use flexbox to align the child div */
+    max-width: 1200px; /* Adjust to your desired content width */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    display: block; /* Ensure the content flows as a single block */
 }
 
 .section-div-two {
