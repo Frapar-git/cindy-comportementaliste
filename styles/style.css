@@ -97,11 +97,12 @@ footer {
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
     position: relative; /* Allow the section to flow naturally */
+    background-color: red;
 }
 
 .main-photo {
     width: 100%; /* Make the image take the full width of the section */
-    /* height: 100%; /* Make the image take the full height of the section */
+    height: 100%; /* Make the image take the full height of the section */
     object-fit: cover; /* Zoom and crop the image to fill the container */
     display: block; /* Remove any inline spacing below the image */
 }
