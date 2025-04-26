@@ -1,4 +1,6 @@
-/* Global Styles */
+/* ===========================
+   Global Styles
+=========================== */
 body {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600; /* Bold */
@@ -8,7 +10,9 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Typography */
+/* ===========================
+   Typography
+=========================== */
 a {
     font-family: 'Qarmic sans free', sans-serif;
 }
@@ -17,6 +21,7 @@ p {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300; /* Light */
     text-align: justify; /* Justify text */
+    line-height: 1.6; /* Improve readability */
 }
 
 h1, h2 {
@@ -24,63 +29,76 @@ h1, h2 {
     font-weight: 700; /* Bold */
 }
 
-/* Header */
+/* ===========================
+   Header
+=========================== */
 header {
-    background: #ffe4d4;
+    background: #fdf0ea;
     color: #704b3e;
     padding: 20px;
 }
 
-/* Navigation */
+/* ===========================
+   Navigation
+=========================== */
 nav a {
     color: #704b3e;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .nav-link.active {
-  color: orange;
-  font-weight: bold; /* Optional: Make the text bold */
+    color: #c44c2a;
 }
 
-/* Main Content */
+/* ===========================
+   Main Content
+=========================== */
 main {
-    padding: 0px;
+    padding-bottom: 60px; /* Add padding to the bottom to ensure footer does not overlap content */
 }
 
-/* Footer */
+/* ===========================
+   Footer
+=========================== */
 footer {
-    background: #f8f4ec;
+    background: #f6f3ef;
     color: #704b3e;
     padding: 10px;
-    position: fixed;
+    position: relative; /* Change from fixed to relative */
     bottom: 0;
     width: 100%;
 }
 
-/* Section Styles */
-section {
-    padding: 20px;
-}
-
+/* ===========================
+   Main Photo Styles
+=========================== */
 .main-photo-section {
-    position: relative;
+    width: 100%; /* Ensure the section is full width */
+    padding: 0; /* Remove padding */
 }
 
 .main-photo {
-    width: 100%;
+    width: 100%; /* Ensure the image is full width */
     height: auto;
     display: block;
 }
 
 .text-container {
-    max-width: 800px; /* Adjust the width as needed */
-    margin: 20px auto;
+    max-width: 75%; /* Adjust the width as needed */
+    margin: 0 auto;
     padding: 20px;
     background-color: #fff; /* White background for text container */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
     box-sizing: border-box;
+}
+
+/* ===========================
+   Section Styles
+=========================== */
+section {
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the section */
 }
 
 /* General Section Styling */
@@ -97,22 +115,26 @@ section {
 
 /* Specific Background Colors */
 .section-one {
-    background-color: #ffcccc; /* Light Red */
+    background-color: #f2f0ea; /* Light Red */
+    margin-top: 0; /* Remove margin above the section */
 }
 
 .section-two {
-    background-color: #ccccff; /* Light Blue */
+    background-color: #f2f0ea; /* Light Blue */
+    max-width: 800px; /* Adjust the width as needed */
 }
 
 .section-three {
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the section */
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    background-color: #e0e0e0; /* Light gray background */
+    align-items: center;
+    background-color: #f6f3ef; /* Light gray background */
 }
 
 .section-four {
-    background-color: #ccccff; /* Light Blue */
+    background-color: #ffffff; /* Light Blue */
 }
 
 .left-column, .right-column {
@@ -128,7 +150,9 @@ section {
     margin: 0 auto;
 }
 
-/* Product Container */
+/* ===========================
+   Product Styles
+=========================== */
 .product-container {
     display: flex;
     justify-content: space-around;
@@ -136,7 +160,6 @@ section {
     margin: 20px 0;
 }
 
-/* Product */
 .product {
     position: relative;
     width: 30%;
@@ -175,7 +198,9 @@ section {
     text-align: center;
 }
 
-/* Button Styles */
+/* ===========================
+   Button Styles
+=========================== */
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -185,10 +210,10 @@ section {
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #4CAF50;
+    background-color: #704b3e;
     border: 2px solid #704b3e; /* Brown border */
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+    border-radius: 0px;
+    box-shadow: 0 0px #999;
 }
 
 .button:hover {
@@ -201,12 +226,17 @@ section {
     transform: translateY(4px);
 }
 
-/* New Section Styles for Text and Image Layout */
+/* ===========================
+   New Section Styles for Text and Image Layout
+=========================== */
 .section {
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
     gap: 20px; /* Space between text and image */
-    margin: 20px 0;
+    margin: 20px auto; /* Center the section horizontally */
+    max-width: 1200px; /* Optional: Limit the width of the section */
+    min-height: 50vh; /* Ensure sections take up at least half the viewport height */
 }
 
 .section img {
@@ -215,17 +245,92 @@ section {
     border-radius: 10px; /* Optional: Rounded corners */
 }
 
-/* First section: Text on the left, image on the right */
 .section-left {
     flex-direction: row;
 }
 
-/* Second section: Image on the left, text on the right */
 .section-right {
     flex-direction: row-reverse;
 }
 
-/* Styling for text */
 .text {
     max-width: 600px;
+    text-align: justify;
+    margin: 20px;
+}
+
+/* ===========================
+   Contact Form Styles
+=========================== */
+.contact-form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #704b3e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a3a2e;
+}
+
+/* ===========================
+   Location Section
+=========================== */
+.location h2 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.location p {
+    margin: 5px 0;
+}
+
+/* ===========================
+   Disclaimer Section
+=========================== */
+.disclaimer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666;
+    text-align: justify;
 }
