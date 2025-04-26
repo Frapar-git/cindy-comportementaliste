@@ -205,43 +205,27 @@ section {
 
 /* Specific Background Colors */
 .box-color-one {
-  background-color: #f2f0ea; /* Light Red */
-  height:100%;
-  position:absolute;
-  top:0px;
-  right:0px;
-  left:0px;
-  bottom:0px;
+    background-color: #f2f0ea; /* Light Red */
+    position: relative; /* Allow the section to flow naturally */
+    width: 100%; /* Ensure it spans the full width */
 }
 
 .box-color-two {
-  background-color: #f2f0ea; /* Light Red */
-  height:100%;
-  position:absolute;
-  top:0px;
-  right:0px;
-  left:0px;
-  bottom:0px;
+    background-color: #f2f0ea; /* Light Red */
+    position: relative; /* Allow the section to flow naturally */
+    width: 100%; /* Ensure it spans the full width */
 }
 
 .box-color-three {
-  background: #f6f3ef;
-  height:100%;
-  position:absolute;
-  top:0px;
-  right:0px;
-  left:0px;
-  bottom:0px;
+    background: #f6f3ef; /* Light Gray */
+    position: relative; /* Allow the section to flow naturally */
+    width: 100%; /* Ensure it spans the full width */
 }
 
 .box-color-four {
-   background-color: #ffffff; /* Light Red */
-   height:100%;
-   position:absolute;
-   top:0px;
-   right:0px;
-   left:0px;
-   bottom:0px;
+    background-color: #ffffff; /* Light Red */
+    position: relative; /* Allow the section to flow naturally */
+    width: 100%; /* Ensure it spans the full width */
 }
 
 /* ===========================
