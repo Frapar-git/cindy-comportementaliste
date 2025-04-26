@@ -91,14 +91,18 @@ footer {
    Main Photo Styles
 =========================== */
 .main-photo-section {
-    width: 100%; /* Ensure the section is full width */
-    padding: 0; /* Remove padding */
+    width: 100%; /* Ensure the section spans the full width of the page */
+    height: 400px; /* Set a fixed height for the section (adjust as needed) */
+    overflow: hidden; /* Hide any part of the image that overflows */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
 }
 
 .main-photo {
-    width: 100%; /* Ensure the image is full width */
-    height: auto;
-    display: block;
+    width: 100%; /* Make the image take the full width of the section */
+    height: 100%; /* Make the image take the full height of the section */
+    object-fit: cover; /* Zoom and crop the image to fill the container */
+    display: block; /* Remove any inline spacing below the image */
 }
 
 .text-container {
