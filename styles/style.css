@@ -110,17 +110,19 @@ section {
 }
 
 .section-div-one {
-    max-width: 1200px; /* Adjust to your desired content width */
-    margin: 0 auto; /* Center the content */
-    padding: 20px; /* Add padding for spacing */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    width: 100%; /* Ensure the section spans the full width of the page */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    display: flex; /* Use flexbox to align the child div */
+    justify-content: center; /* Center the child div horizontally */
 }
 
 .section-div-two {
-    max-width: 1200px; /* Adjust to your desired content width */
-    margin: 0 auto; /* Center the content */
-    padding: 20px; /* Add padding for spacing */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    width: 100%; /* Ensure the section spans the full width of the page */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    display: flex; /* Use flexbox to align the child div */
+    justify-content: center; /* Center the child div horizontally */
 }
 
 .section-div-three {
@@ -134,10 +136,11 @@ section {
 }
 
 .section-div-four {
-    max-width: 1200px; /* Adjust to your desired content width */
-    margin: 0 auto; /* Center the content */
-    padding: 20px; /* Add padding for spacing */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    width: 100%; /* Ensure the section spans the full width of the page */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    display: flex; /* Use flexbox to align the child div */
+    justify-content: center; /* Center the child div horizontally */
 }
 
 /* Specific Background Colors */
