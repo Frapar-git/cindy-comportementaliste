@@ -205,23 +205,43 @@ section {
 
 /* Specific Background Colors */
 .box-color-one {
-   background-color: red; /* Light Red */
-   padding: 20px;
+  background-color: red; /* Light Red */
+  height:100%;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:0px;
+  bottom:0px;
 }
 
 .box-color-two {
-   background-color: yellow; /* Light Red */
-   padding: 20px;
+  background-color: yellow; /* Light Red */
+  height:100%;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:0px;
+  bottom:0px;
 }
 
 .box-color-three {
-   background-color: blue; /* Light Red */
-   padding: 20px;
+  background:blue;
+  height:100%;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:0px;
+  bottom:0px;
 }
 
 .box-color-four {
    background-color: green; /* Light Red */
-   padding: 20px;
+   height:100%;
+   position:absolute;
+   top:0px;
+   right:0px;
+   left:0px;
+   bottom:0px;
 }
 
 /* ===========================
