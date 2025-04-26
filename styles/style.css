@@ -101,6 +101,20 @@ section {
     margin: 0 auto; /* Center the section */
 }
 
+
+/* General Section Styling */
+.section-one, .section-two, .section-three, .section-four {
+    width: 100%; /* Ensure the background spans the full width */
+}
+
+.section-container {
+    max-width: 1200px; /* Adjust to your desired content width */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+/* Specific Background Colors */
 .section-one {
     background-color: #f2f0ea; /* Light Red */
     margin-top: 0; /* Remove margin above the section */
