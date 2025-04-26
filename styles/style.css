@@ -155,7 +155,7 @@ section {
     justify-content: center; /* Center the child div horizontally */
 }
 
-/* Specific Background Colors */
+/* Specific Background Settings */
 .section-one {
     background-color: #f2f0ea; /* Light Red */
     margin-top: 0; /* Remove margin above the section */
@@ -186,6 +186,23 @@ section {
 .right-column p {
     max-width: 400px; /* Limit the text length */
     margin: 0 auto;
+}
+
+/* Specific Background Colors */
+.color-section-one {
+background-color: red; /* Light Red */
+}
+
+.color-section-two {
+background-color: yellow; /* Light Red */
+}
+
+.color-section-three {
+background-color: blue; /* Light Red */
+}
+
+.color-section-four {
+background-color: green; /* Light Red */
 }
 
 /* ===========================
