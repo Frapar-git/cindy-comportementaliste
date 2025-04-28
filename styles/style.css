@@ -290,7 +290,6 @@ section {
     position: relative; /* Allow the section to flow naturally */
     width: 30%; /* Ensure it spans the full width */
     padding: 0px 0px 0px 0px;
-    width: 30%; /* Ensure the section spans the full width of the page */
     height: 400px; /* Set a fixed height for the section (adjust as needed) */
     overflow: hidden; /* Hide any part of the image that overflows */
     margin: 0; /* Remove any default margin */
@@ -304,9 +303,10 @@ section {
 */
 
 .product img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 100%; /* Make the image span the full width of the container */
+    height: 100%; /* Make the image span the full height of the container */
+    object-fit: cover; /* Ensure the image fills the container while maintaining its aspect ratio */
+    display: block; /* Remove any inline spacing below the image */
 }
 
 .product .overlay {
@@ -318,8 +318,8 @@ section {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
 }
 
 .product:hover .overlay {
