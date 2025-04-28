@@ -280,6 +280,7 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     max-height: 400px; /* Set a fixed height for the product container */
     margin: 20px 0;
 }
