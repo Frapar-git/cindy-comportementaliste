@@ -282,18 +282,28 @@ section {
 }
 
 .product {
+    position: relative;
+    width: 30%; /* Adjust the width of each product */
+    height: 300px; /* Set a fixed height for the product container */
+    overflow: hidden; /* Hide any part of the image that overflows */
+    margin: 0 auto; /* Center the product if needed */
+}
+
+/*
+.product {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 20px 0;
-    background-color: red; /* Light Red */
-    position: relative; /* Allow the section to flow naturally */
-    width: 30%; /* Ensure it spans the full width */
+    background-color: red;
+    position: relative; 
+    width: 30%;
     padding: 0px 0px 0px 0px;
-    height: 400px; /* Set a fixed height for the section (adjust as needed) */
-    overflow: hidden; /* Hide any part of the image that overflows */
-    margin: 0; /* Remove any default margin */
+    height: 400px;
+    overflow: hidden;
+    margin: 0;
 }
+*/
 
 /*
 .product {
