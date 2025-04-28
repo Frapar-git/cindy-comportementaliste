@@ -271,14 +271,20 @@ section {
 /* ===========================
    Product Styles
 =========================== */
+/*
 .product-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 20px 0;
 }
+*/
 
 .product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
     background-color: red; /* Light Red */
     position: relative; /* Allow the section to flow naturally */
     width: 30%; /* Ensure it spans the full width */
