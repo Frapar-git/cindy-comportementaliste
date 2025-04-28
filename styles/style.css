@@ -279,9 +279,22 @@ section {
 }
 
 .product {
+    background-color: red; /* Light Red */
+    position: relative; /* Allow the section to flow naturally */
+    width: 30%; /* Ensure it spans the full width */
+    padding: 0px 0px 0px 0px;
+    width: 30%; /* Ensure the section spans the full width of the page */
+    height: 400px; /* Set a fixed height for the section (adjust as needed) */
+    overflow: hidden; /* Hide any part of the image that overflows */
+    margin: 0; /* Remove any default margin */
+}
+
+/*
+.product {
     position: relative;
     width: 30%;
 }
+*/
 
 .product img {
     width: 100%;
