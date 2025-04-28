@@ -197,8 +197,9 @@ section {
 
 .section-two {
    background-color: green;
-    /* background-color: #f2f0ea; /* Light Blue */
-   max-height: 400px; /* Adjust the width as needed */
+   /* background-color: #f2f0ea; /* Light Blue */
+   /* max-height: 400px; /* Adjust the width as needed */
+   height: 400px; /* Adjust the width as needed */
 }
 
 .section-three {
@@ -253,7 +254,8 @@ section {
     background-color: #f2f0ea; /* Light Red */
     position: relative; /* Allow the section to flow naturally */
     width: 100%; /* Ensure it spans the full width */
-    padding: 0px 0px 60px 0px;
+    padding: 0px 0px 00px 0px;
+    margin: 0px 0px 60px 0px;
 }
 
 .box-color-three {
