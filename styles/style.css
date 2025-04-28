@@ -163,7 +163,7 @@ section {
 
 .section-div-two {
     width: 100%; /* Ensure the section spans the full width of the page */
-    margin: 20px 0; /* Remove any default margin */
+    margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
     display: flex; /* Use flexbox to align the child div */
     justify-content: space-around; /* Center the child div horizontally */
