@@ -287,7 +287,7 @@ section {
 .product {
     position: relative;
     width: 30%; /* Adjust the width of each product */
-    max-width: 300px;
+    /* max-width: 300px; */
     max-height: 400px; /* Set a fixed height for the product container */
     overflow: hidden; /* Hide any part of the image that overflows */
     margin: 0 auto; /* Center the product if needed */
