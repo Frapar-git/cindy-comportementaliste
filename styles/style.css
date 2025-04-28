@@ -316,6 +316,7 @@ section {
     width: 100%; /* Make the image span the full width of the container */
     height: 100%; /* Make the image span the full height of the container */
     object-fit: cover; /* Ensure the image fills the container while maintaining its aspect ratio */
+    object-position: center; /* Center the zoom on the image */
     display: block; /* Remove any inline spacing below the image */
 }
 
