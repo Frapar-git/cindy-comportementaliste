@@ -282,7 +282,7 @@ section {
     align-items: center;
     width: 100%;
     max-height: 400px; /* Set a fixed height for the product container */
-    margin: 20px 0;
+    margin: 20px 100px;
 }
 
 .product {
@@ -292,6 +292,7 @@ section {
     height: 400px; /* Set a fixed height for the product container */
     overflow: hidden; /* Hide any part of the image that overflows */
     margin: 0 auto; /* Center the product if needed */
+    padding: 30px;
 }
 
 /*
