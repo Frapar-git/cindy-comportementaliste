@@ -196,8 +196,7 @@ section {
 }
 
 .section-two {
-   background-color: green;
-   /* background-color: #f2f0ea; /* Light Blue */
+   background-color: #f2f0ea; /* Light Blue */
    /* max-height: 400px; /* Adjust the width as needed */
    height: 400px; /* Adjust the width as needed */
 }
