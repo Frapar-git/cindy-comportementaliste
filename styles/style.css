@@ -131,7 +131,7 @@ section {
 
 
 /* General Section Styling */
-.section-one, .section-two, .section-three, .section-four {
+.section-one, .section-two, .section-three, .section-four, section-faq {
     width: 100%; /* Ensure the background spans the full width */
     margin: 0 auto; /* Center the section */
     padding: 0; /* Remove any default padding */
