@@ -487,6 +487,50 @@ button:hover {
 }
 
 /* ===========================
+   FAQ Styles
+=========================== */
+.faq-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.faq-question:hover {
+    background-color: #e0e0e0;
+}
+
+.faq-answer {
+    display: none;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.faq-answer.hidden {
+    display: none;
+}
+
+.faq-answer:not(.hidden) {
+    display: block;
+}
+
+/* ===========================
    Disclaimer Section
 =========================== */
 .disclaimer {
