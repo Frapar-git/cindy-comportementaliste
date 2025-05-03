@@ -5,41 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
     <script src="../js/load-common.js" defer></script>
+    <script src="../js/faq.js" defer></script> <!-- Link to the new JS file -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div id="header-placeholder">
-    </div>
+    <div id="header-placeholder"></div>
     <main>
         <section class="faq-section">
             <div class="faq-container">
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleAnswer('faq1')">What is HTML?</div>
+                    <div class="faq-question" data-answer="faq1">What is HTML?</div>
                     <div class="faq-answer hidden" id="faq1">HTML stands for HyperText Markup Language. It is used to create the structure of web pages.</div>
                 </div>
 
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleAnswer('faq2')">What is CSS?</div>
+                    <div class="faq-question" data-answer="faq2">What is CSS?</div>
                     <div class="faq-answer hidden" id="faq2">CSS stands for Cascading Style Sheets. It is used to style and layout web pages.</div>
                 </div>
 
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleAnswer('faq3')">What is JavaScript?</div>
+                    <div class="faq-question" data-answer="faq3">What is JavaScript?</div>
                     <div class="faq-answer hidden" id="faq3">JavaScript is a programming language used to create dynamic and interactive content on web pages.</div>
                 </div>
             </div>
         </section>
     </main>
-    <script>
-        function toggleAnswer(answerId) {
-            // Get the clicked answer
-            const clickedAnswer = document.getElementById(answerId);
-
-            // Toggle the visibility of the answer
-            clickedAnswer.classList.toggle('hidden');
-        }
-    </script>
-    <div id="footer-placeholder">
-    </div>
+    <div id="footer-placeholder"></div>
 </body>
 </html>
