@@ -131,7 +131,7 @@ section {
 
 
 /* General Section Styling */
-.section-one, .section-two, .section-three, .section-four, section-faq {
+.section-one, .section-two, .section-three, .section-four, .section-faq {
     width: 100%; /* Ensure the background spans the full width */
     margin: 0 auto; /* Center the section */
     padding: 0; /* Remove any default padding */
@@ -209,6 +209,11 @@ section {
 .section-three {
     max-width: 800px; /* Adjust the width as needed */
     background-color: #f6f3ef; /* Light gray background */
+}
+
+.section-faq {
+    background-color: #f2f0ea; /* Light Red */
+    margin-top: 20px, 0px, 0px, 0px; /* Remove margin above the section */
 }
 
 .section-four {
