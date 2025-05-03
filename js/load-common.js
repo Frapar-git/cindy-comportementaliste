@@ -22,6 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     container.classList.add("hidden");
                 }
             });
+
+            // Hide all answers when switching categories
+            const allAnswers = document.querySelectorAll(".faq-answer");
+            allAnswers.forEach(answer => answer.classList.add("hidden"));
         });
     });
 
@@ -33,7 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const answerId = this.getAttribute("data-answer");
             const answer = document.getElementById(answerId);
 
-            // Toggle the visibility of the answer
+            // Hide all other answers
+            const allAnswers = document.querySelectorAll(".faq-answer");
+            allAnswers.forEach(ans => ans.classList.add("hidden"));
+
+            // Toggle the visibility of the clicked answer
             answer.classList.toggle("hidden");
         });
     });
