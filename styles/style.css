@@ -550,7 +550,7 @@ button:hover {
 }
 
 .faq-category-button.active {
-    background-color: #704b3e; /* Active button background color */
+    background-color: #bfa495; /* Active button background color */
     color: #fff; /* Active button text color */
     border-color: #704b3e;
 }
