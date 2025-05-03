@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Toggle FAQ answers
+    const faqQuestions = document.querySelectorAll(".faq-question");
+
+    faqQuestions.forEach(question => {
+        question.addEventListener("click", function () {
+            const answerId = this.getAttribute("data-answer");
+            const answer = document.getElementById(answerId);
+
+            // Toggle the visibility of the answer
+            answer.classList.toggle("hidden");
+        });
+    });
+
     // Load the header
     fetch('../html/header.html')
         .then(response => response.text())
