@@ -530,6 +530,39 @@ button:hover {
     display: block; /* Show answers when the hidden class is removed */
 }
 
+.faq-categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.faq-category-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.faq-category-button.active {
+    background-color: #704b3e;
+    color: #fff;
+    border-color: #704b3e;
+}
+
+.faq-category-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* FAQ Containers */
+.faq-container.hidden {
+    display: none;
+}
+
+
 /* ===========================
    Disclaimer Section
 =========================== */
