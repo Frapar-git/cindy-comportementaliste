@@ -12,9 +12,13 @@
     <div id="header-placeholder"></div>
     <main>
         <section class="faq-section">
+            <div class="faq-categories">
+                <button class="faq-category-button active" data-category="meeting">Meeting</button>
+                <button class="faq-category-button" data-category="catsitting">Catsitting</button>
+            </div>
+            
             <!-- First Category: Meeting -->
-            <h2>Meeting</h2>
-            <div class="faq-container">
+            <div class="faq-container" id="meeting">
                 
                 <div class="faq-item">
                     <div class="faq-question" data-answer="faq1">Qu’est-ce qu’un comportementaliste félin et en quoi peut-il m’aider ?</div>
@@ -81,8 +85,7 @@
             </div>
             
             <!-- Second Category: Catsitting -->
-            <h2>Catsitting</h2>
-            <div class="faq-container">
+            <div class="faq-container hidden" id="catsitting">
                 <div class="faq-item">
                     <div class="faq-question" data-answer="faq8">Qu’est-ce qu’un comportementaliste félin et en quoi peut-il m’aider ?</div>
                     <div class="faq-answer hidden" id="faq8">Un comportementaliste félin est un professionnel spécialisé dans la compréhension et l’analyse du comportement des chats. 
