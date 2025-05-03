@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById('page-title').textContent = pageTitle;
 
             // Highlight the active link in the header
-            const currentPage = window.location.pathname; // Get the current page path
+            const currentPage = window.location.pathname.split("/").pop(); // Get the current page filename
             const navLinks = document.querySelectorAll('.nav-link'); // Select all navigation links
 
             navLinks.forEach(link => {
