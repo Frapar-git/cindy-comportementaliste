@@ -514,7 +514,7 @@ button:hover {
 }
 
 .faq-answer {
-    display: none;
+    display: none; /* Hide answers by default */
     margin: 10px 0;
     padding: 10px;
     background-color: #f9f9f9;
@@ -523,11 +523,11 @@ button:hover {
 }
 
 .faq-answer.hidden {
-    display: none;
+    display: none; /* Ensure hidden answers remain hidden */
 }
 
 .faq-answer:not(.hidden) {
-    display: block;
+    display: block; /* Show answers when the hidden class is removed */
 }
 
 /* ===========================
