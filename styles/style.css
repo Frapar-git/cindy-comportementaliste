@@ -1,6 +1,11 @@
 /* ===========================
    Global Styles
 =========================== */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600; /* Bold */
@@ -336,7 +341,7 @@ section {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.95;
     transition: 0.5s ease;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
 }
