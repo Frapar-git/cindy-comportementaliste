@@ -37,12 +37,17 @@ document.addEventListener("DOMContentLoaded", function () {
             const answerId = this.getAttribute("data-answer");
             const answer = document.getElementById(answerId);
 
-            // Hide all other answers
-            const allAnswers = document.querySelectorAll(".faq-answer");
-            allAnswers.forEach(ans => ans.classList.add("hidden"));
+            // Check if the clicked answer is already visible
+            if (!answer.classList.contains("hidden")) {
+                // If visible, hide it
+                answer.classList.add("hidden");
+            } else {
+                // If not visible, hide all other answers and show the clicked one
+                const allAnswers = document.querySelectorAll(".faq-answer");
+                allAnswers.forEach(ans => ans.classList.add("hidden"));
 
-            // Toggle the visibility of the clicked answer
-            answer.classList.toggle("hidden");
+                answer.classList.remove("hidden");
+            }
         });
     });
 
