@@ -224,7 +224,7 @@ section {
 
 .section-faq {
     background-color: #f2f0ea; /* Light Red */
-    margin-top: 20px, 0px, 0px, 0px; /* Remove margin above the section */
+    margin-top: 20px; /* Remove margin above the section */
 }
 
 .section-four {
