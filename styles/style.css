@@ -69,8 +69,19 @@ nav a {
     text-decoration: none;
 }
 
+.nav-link {
+    color: #704b3e; /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover and active states */
+}
+
+.nav-link:hover {
+    color: #bc4c2a; /* Orange color on hover */
+}
+
 .nav-link.active {
-    color: #c44c2a;
+    color: #bc4c2a; /* Orange color for the active page */
+    font-weight: bold; /* Optional: Make the active link bold */
 }
 
 /* ===========================
