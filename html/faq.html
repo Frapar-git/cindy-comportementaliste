@@ -13,35 +13,32 @@
     <main>
         <section class="faq-section">
             <div class="faq-container">
-                <div class="faq-answer" id="faq-answer-box"></div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer('faq1')">What is HTML?</div>
+                    <div class="faq-answer hidden" id="faq1">HTML stands for HyperText Markup Language. It is used to create the structure of web pages.</div>
+                </div>
 
-                <div class="faq-question" onclick="showAnswer('faq1')">What is HTML?</div>
-                <div class="faq-answer hidden" id="faq1">HTML stands for HyperText Markup Language. It is used to create the structure of web pages.</div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer('faq2')">What is CSS?</div>
+                    <div class="faq-answer hidden" id="faq2">CSS stands for Cascading Style Sheets. It is used to style and layout web pages.</div>
+                </div>
 
-                <div class="faq-question" onclick="showAnswer('faq2')">What is CSS?</div>
-                <div class="faq-answer hidden" id="faq2">CSS stands for Cascading Style Sheets. It is used to style and layout web pages.</div>
-
-                <div class="faq-question" onclick="showAnswer('faq3')">What is JavaScript?</div>
-                <div class="faq-answer hidden" id="faq3">JavaScript is a programming language used to create dynamic and interactive content on web pages.</div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer('faq3')">What is JavaScript?</div>
+                    <div class="faq-answer hidden" id="faq3">JavaScript is a programming language used to create dynamic and interactive content on web pages.</div>
+                </div>
             </div>
         </section>
     </main>
     <script>
-        function showAnswer(answerId) {
-            // Hide all answers
-            const allAnswers = document.querySelectorAll('.faq-answer');
-            allAnswers.forEach(answer => answer.classList.remove('visible'));
-
+        function toggleAnswer(answerId) {
             // Get the clicked answer
             const clickedAnswer = document.getElementById(answerId);
 
-            // Move the answer to the top and make it visible
-            const answerBox = document.getElementById('faq-answer-box');
-            answerBox.innerHTML = clickedAnswer.innerHTML;
-            answerBox.classList.add('visible');
+            // Toggle the visibility of the answer
+            clickedAnswer.classList.toggle('hidden');
         }
     </script>
-    </main>
     <div id="footer-placeholder">
     </div>
 </body>
