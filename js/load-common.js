@@ -5,10 +5,23 @@ document.addEventListener("DOMContentLoaded", function () {
     faqQuestions.forEach(question => {
         question.addEventListener("click", function () {
             const answerId = this.getAttribute("data-answer");
-            const answer = document.getElementById(answerId);
+            const linkedAnswerId = this.getAttribute("data-linked-answer");
 
-            // Toggle the visibility of the answer
-            answer.classList.toggle("hidden");
+            // Hide all answers
+            const allAnswers = document.querySelectorAll(".faq-answer");
+            allAnswers.forEach(answer => answer.classList.add("hidden"));
+
+            // Show the clicked answer
+            if (answerId) {
+                const answer = document.getElementById(answerId);
+                answer.classList.remove("hidden");
+            }
+
+            // Show the linked answer (if any)
+            if (linkedAnswerId) {
+                const linkedAnswer = document.getElementById(linkedAnswerId);
+                linkedAnswer.classList.remove("hidden");
+            }
         });
     });
 
