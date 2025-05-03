@@ -541,20 +541,23 @@ button:hover {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Default lighter background for inactive buttons */
     border: 1px solid #ddd;
     border-radius: 5px;
     font-weight: bold;
+    color: #704b3e; /* Default text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover and active states */
 }
 
 .faq-category-button.active {
-    background-color: #704b3e;
-    color: #fff;
+    background-color: #704b3e; /* Active button background color */
+    color: #fff; /* Active button text color */
     border-color: #704b3e;
 }
 
 .faq-category-button:hover {
-    background-color: #e0e0e0;
+    background-color: #bc4c2a; /* Orange hover color (same as your button hover) */
+    color: #fff; /* White text on hover */
 }
 
 /* FAQ Containers */
