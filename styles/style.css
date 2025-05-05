@@ -125,6 +125,11 @@ footer nav {
     color: #bc4c2a; /* Orange color on hover */
 }
 
+.footer-link.active {
+    color: #bc4c2a; /* Orange color for the active page */
+    font-weight: bold; /* Optional: Make the active link bold */
+}
+
 /* ===========================
    Main Photo Styles
 =========================== */
