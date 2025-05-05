@@ -98,6 +98,10 @@ main {
     background-color: #f2f0ea; /* Light beige background color */
 }
 
+.padding-main {
+   padding-top: 30px;
+}
+
 /* ===========================
    Footer
 =========================== */
