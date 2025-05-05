@@ -558,9 +558,10 @@ button:hover {
     margin: 10px 0;
     padding: 10px;
     background-color: #bfa495;
-    color: #704b3e;
+    color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .faq-answer.hidden {
