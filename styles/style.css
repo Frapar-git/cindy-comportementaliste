@@ -299,6 +299,7 @@ section {
     position: relative; /* Allow the section to flow naturally */
     width: 100%; /* Ensure it spans the full width */
     padding: 30px 0px 50px 0px;
+    text-align: justify;
 }
 
 .box-color-one {
