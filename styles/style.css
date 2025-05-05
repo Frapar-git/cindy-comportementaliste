@@ -419,7 +419,7 @@ section {
     /* max-width: 300px; */
     height: 400px; /* Set a fixed height for the product container */
     overflow: hidden; /* Hide any part of the image that overflows */
-    margin: 30px auto; /* Center the product if needed */
+    margin: 30px 0; /* Center the product if needed */
     /* padding: 30px; */
 }
 
