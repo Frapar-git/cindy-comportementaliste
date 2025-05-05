@@ -275,7 +275,7 @@ section {
 } */
 
 .box-photo {
-    background-color: red; /* Light Red */
+    /* background-color: red; /* Light Red */
     position: relative; /* Allow the section to flow naturally */
     width: 100%; /* Ensure it spans the full width */
     padding: 0px 0px 0px 0px;
