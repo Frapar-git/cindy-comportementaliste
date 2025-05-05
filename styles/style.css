@@ -438,7 +438,11 @@ section {
 }
 
 .product-justified .li {
+    position: absolute;
     text-align: justify;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 /* ===========================
