@@ -77,5 +77,15 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer-placeholder').innerHTML = data;
+
+            // Highlight the active link in the footer
+            const currentPage = window.location.pathname.split("/").pop(); // Get the current page filename
+            const footerLinks = document.querySelectorAll('.footer-link'); // Select all footer links
+
+            footerLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active'); // Add the 'active' class to the matching link
+                }
+            });
         });
 });
