@@ -423,7 +423,7 @@ section {
     /* padding: 30px; */
 }
 
-.product-justified .text {
+.product-justified .text .li {
     color: white;
     font-size: 20px;
     position: absolute;
