@@ -90,7 +90,7 @@ nav a {
    Main Content
 =========================== */
 main {
-    padding-bottom: 60px; /* Add padding to the bottom to ensure footer does not overlap content */
+    /* padding-bottom: 60px; /* Add padding to the bottom to ensure footer does not overlap content */
     flex: 1; /* This makes the main content grow to fill the available space */
 }
 
@@ -103,6 +103,7 @@ footer {
     padding: 10px 10px 10px 10px;
     position: relative; /* Change from fixed to relative */
     text-align: center;
+    padding-top: 30px;
     bottom: 0;
     width: 100%;
 }
