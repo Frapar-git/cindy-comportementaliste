@@ -541,7 +541,9 @@ button:hover {
     cursor: pointer;
     margin: 10px 0;
     padding: 10px;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
+    background-color: #704b3e; /* Active button background color */
+    color: #fff; /* Active button text color */
     border: 1px solid #ddd;
     border-radius: 5px;
     font-weight: bold;
@@ -555,7 +557,8 @@ button:hover {
     display: none; /* Hide answers by default */
     margin: 10px 0;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: #bfa495;
+    color: #704b3e;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
