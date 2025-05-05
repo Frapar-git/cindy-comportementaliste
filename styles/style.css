@@ -290,6 +290,13 @@ section {
     margin: 0; /* Remove any default margin */
 }
 
+.box-footer{
+    background-color: #f2f0ea; /* Light Red */
+    position: relative; /* Allow the section to flow naturally */
+    width: 100%; /* Ensure it spans the full width */
+    padding: 30px 0px 50px 0px;
+}
+
 .box-color-one {
     background-color: #f2f0ea; /* Light Red */
     position: relative; /* Allow the section to flow naturally */
