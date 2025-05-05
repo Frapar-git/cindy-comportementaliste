@@ -99,8 +99,26 @@ footer {
     color: #704b3e;
     padding: 10px 10px 10px 10px;
     position: relative; /* Change from fixed to relative */
+    text-align: center;
     bottom: 0;
     width: 100%;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-link {
+    color: #704b3e; /* Default link color */
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.footer-link:hover {
+    color: #bc4c2a; /* Orange color on hover */
 }
 
 /* ===========================
