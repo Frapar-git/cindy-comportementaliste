@@ -94,6 +94,10 @@ main {
     flex: 1; /* This makes the main content grow to fill the available space */
 }
 
+.colored-main {
+    background-color: #f2f0ea; /* Light beige background color */
+}
+
 /* ===========================
    Footer
 =========================== */
