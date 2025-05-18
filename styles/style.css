@@ -143,8 +143,48 @@ footer nav {
    Section Styles
 =========================== */
 section {
-    max-width: 800px; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.section img {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.section .text {
+    width: 45%;
+    max-width: 600px;
+}
+
+.section .text p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Section with image on right */
+.section-left {
+    flex-direction: row;
+}
+
+/* Section with image on left */
+.section-right {
+    flex-direction: row-reverse;
+}
+
+/* Add some spacing between sections */
+.section + .section {
+    margin-top: 60px;
 }
 
 /* General Section Styling */
@@ -417,8 +457,8 @@ section {
     background-color: #f2f0ea;
     position: relative;
     width: 100%;
-    padding: 0px 0px 60px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 00px 0px;
+    margin: 0px 0px 60px 0px;
 }
 
 .box-color-three {
