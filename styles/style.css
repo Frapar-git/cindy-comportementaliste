@@ -509,14 +509,6 @@ section {
 /* ===========================
    Contact Form Styles
 =========================== */
-/* Contact Form Section */
-.contact-form-section {
-    flex: 1;
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
 
 .contact-form h1 {
     font-size: 24px;
@@ -805,6 +797,7 @@ button:hover {
 /* ===========================
    Contact Page Styles
 =========================== */
+
 .contact-main {
     background-color: #f2f0ea;
     min-height: 100vh;
@@ -817,6 +810,90 @@ button:hover {
     display: flex;
     gap: 40px;
     align-items: flex-start;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-header h1 {
+    color: #704b3e;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.contact-header p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.modern-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #704b3e;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #bc4c2a;
+}
+
+.submit-button {
+    background-color: #704b3e;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #bc4c2a;
 }
 
 /* Contact Info Section */
