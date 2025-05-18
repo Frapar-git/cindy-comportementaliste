@@ -663,6 +663,13 @@ button:hover {
 }
 
 /* ===========================
+   Icon Styles
+=========================== */
+.globe-icon {
+    color: black;
+}
+
+/* ===========================
    Disclaimer Section
 =========================== */
 .disclaimer {
