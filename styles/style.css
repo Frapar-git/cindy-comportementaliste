@@ -193,14 +193,14 @@ section {
 }
 
 .section-div-three {
-    max-width: 1200px; /* Adjust to your desired content width */
-    margin: 0 auto; /* Center the content */
-    padding: 0px 20px 0px 20px; /* Add padding for spacing */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%; /* Ensure the content takes up the full width of the container */
+    align-items: flex-start;
+    width: 100%;
 }
 
 .section-div-four {
@@ -248,9 +248,24 @@ section {
 }
 
 .left-column, .right-column {
-    width: 48%; /* Adjust the width as needed */
+    width: 48%;
     padding: 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-column h1, .right-column h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px; /* Adjust the size of the emoji if needed */
+}
+
+.left-column h2, .right-column h2 {
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: center;
 }
 
 .right-column p {
