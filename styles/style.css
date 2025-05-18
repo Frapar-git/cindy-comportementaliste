@@ -781,6 +781,8 @@ button:hover {
     position: relative;
     margin-bottom: 8px;
     line-height: 1.4;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .formation-card li:before {
@@ -788,7 +790,7 @@ button:hover {
     color: #bc4c2a;
     position: absolute;
     left: 0;
-} 
+}
 
 /* ===========================
    Icon Styles
