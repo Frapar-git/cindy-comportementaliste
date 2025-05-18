@@ -663,8 +663,10 @@ button:hover {
 /* ===========================
    Icon Styles
 =========================== */
+/* Globe icon styling */
 .globe-icon {
-    color: black;
+    color: #000000;
+    text-decoration: none;
 }
 
 /* ===========================
