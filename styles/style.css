@@ -904,10 +904,11 @@ button:hover {
 
 .info-card {
     background: white;
-    padding: 25px;
+    padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    flex: 1;
 }
 
 .info-icon {
@@ -926,9 +927,20 @@ button:hover {
     line-height: 1.6;
 }
 
+.info-card.location,
+.info-card.phone {
+    background: white;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .info-card.disclaimer {
     background-color: #f8f4f1;
     border-left: 4px solid #bc4c2a;
+    margin-top: auto;
 }
 
 .info-card.disclaimer p {
@@ -948,6 +960,11 @@ button:hover {
 
     .form-row {
         flex-direction: column;
+    }
+
+    .info-card.location,
+    .info-card.phone {
+        min-height: 150px;
     }
 } 
 
