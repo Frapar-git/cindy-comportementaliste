@@ -196,7 +196,7 @@ section {
 
 /* Section with image on left */
 .section-right {
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 /* Add some spacing between sections */
