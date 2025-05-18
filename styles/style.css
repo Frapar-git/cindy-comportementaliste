@@ -509,6 +509,15 @@ section {
 /* ===========================
    Contact Form Styles
 =========================== */
+/* Contact Form Section */
+.contact-form-section {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .contact-form h1 {
     font-size: 24px;
     margin-bottom: 10px;
