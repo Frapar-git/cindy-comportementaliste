@@ -939,7 +939,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    padding: 15px;
+    padding: 0px;
 }
 
 .contact-item .info-icon {
