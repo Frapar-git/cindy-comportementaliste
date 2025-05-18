@@ -143,6 +143,12 @@ footer nav {
    Section Styles
 =========================== */
 section {
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the section */
+}
+
+/* About page specific sections */
+.section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,11 +171,22 @@ section {
     max-width: 600px;
 }
 
+.section .text h2 {
+    color: #704b3e;
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+}
+
 .section .text p {
-    margin: 0;
+    margin: 0 0 15px 0;
     line-height: 1.6;
     font-size: 16px;
     text-align: justify;
+}
+
+.section .text p:last-child {
+    margin-bottom: 0;
 }
 
 /* Section with image on right */
