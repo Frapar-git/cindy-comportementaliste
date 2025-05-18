@@ -340,20 +340,23 @@ section {
 =========================== */
 .product-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
     width: 100%;
-    max-height: 400px;
     margin: 0; /* Remove the margin */
-    gap: 80px;
+    gap: 30px;
 }
 
 .product {
     position: relative;
     width: 30%;
-    height: 400px;
-    overflow: hidden;
-    margin: 0; /* Remove the margin */
+    height: auto;
+    overflow: visible;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .product img {
@@ -400,15 +403,18 @@ section {
 
 .product-justified {
     position: relative;
-    width: 30%; /* Adjust the width of each product */
-    height: 400px; /* Set a fixed height for the product container */
-    overflow: hidden; /* Hide any part of the image that overflows */
-    margin: 30px 0; /* Center the product if needed */
+    width: 30%;
+    height: auto;
+    min-height: 300px;
+    overflow: visible;
+    margin: 0;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-justified:hover {
