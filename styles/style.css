@@ -184,11 +184,11 @@ section {
 }
 
 .section-div-two {
-    width: 100%; /* Ensure the section spans the full width of the page */
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
-    display: flex; /* Use flexbox to align the child div */
-    justify-content: space-around; /* Center the child div horizontally */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -229,8 +229,10 @@ section {
 }
 
 .section-two {
-   background-color: #f2f0ea; /* Light Blue */
-   height: 400px; /* Adjust the width as needed */
+    background-color: #f2f0ea;
+    height: 400px;
+    display: flex;
+    align-items: center;
 }
 
 .section-three {
@@ -283,17 +285,17 @@ section {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    max-height: 400px; /* Set a fixed height for the product container */
-    margin: 20px 100px;
+    max-height: 400px;
+    margin: 0; /* Remove the margin */
     gap: 80px;
 }
 
 .product {
     position: relative;
-    width: 30%; /* Adjust the width of each product */
-    height: 400px; /* Set a fixed height for the product container */
-    overflow: hidden; /* Hide any part of the image that overflows */
-    margin: 30px auto; /* Center the product if needed */
+    width: 30%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0; /* Remove the margin */
 }
 
 .product img {
