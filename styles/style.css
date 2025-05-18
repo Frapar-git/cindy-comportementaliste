@@ -590,19 +590,34 @@ button:hover {
     display: none;
     margin: 10px 0;
     padding: 10px;
-    background-color: #bfa495;
-    color: black;
+    background-color: #f6f3ef; /* Changed from #bfa495 to a lighter color */
+    color: #704b3e; /* Changed text color to match theme */
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: normal; /* Changed from bold to normal for better readability */
 }
 
-.faq-answer.hidden {
-    display: none;
+.faq-answer p {
+    margin: 0 0 10px 0;
+    line-height: 1.6;
 }
 
-.faq-answer:not(.hidden) {
-    display: block;
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-answer ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.faq-answer ul li {
+    margin-bottom: 5px;
+    color: #704b3e;
+}
+
+.faq-answer ul li:last-child {
+    margin-bottom: 0;
 }
 
 .faq-categories {
