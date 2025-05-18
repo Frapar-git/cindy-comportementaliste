@@ -241,12 +241,13 @@ section {
 }
 
 .section-div-two {
-    width: 80%;
+    width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0 100px;  /* Add horizontal padding */
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-sizing: border-box;  /* Ensure padding is included in width calculation */
 }
 
 .section-div-three {
@@ -474,8 +475,8 @@ section {
     background-color: #f2f0ea;
     position: relative;
     width: 100%;
-    padding: 0px 0px 60px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 00px 0px;
+    margin: 0px 0px 60px 0px;
 }
 
 .box-color-three {
@@ -587,14 +588,21 @@ button:hover {
 }
 
 .faq-answer {
-    display: none;
     margin: 10px 0;
     padding: 10px;
-    background-color: #f6f3ef; /* Changed from #bfa495 to a lighter color */
-    color: #704b3e; /* Changed text color to match theme */
+    background-color: #f6f3ef;
+    color: #704b3e;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-weight: normal; /* Changed from bold to normal for better readability */
+    font-weight: normal;
+}
+
+.faq-answer.hidden {
+    display: none;
+}
+
+.faq-answer:not(.hidden) {
+    display: block;
 }
 
 .faq-answer p {
