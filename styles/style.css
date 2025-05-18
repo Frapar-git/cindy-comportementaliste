@@ -417,8 +417,8 @@ section {
     background-color: #f2f0ea;
     position: relative;
     width: 100%;
-    padding: 0px 0px 00px 0px;
-    margin: 0px 0px 60px 0px;
+    padding: 0px 0px 60px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .box-color-three {
