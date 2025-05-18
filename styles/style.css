@@ -17,23 +17,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/*
-html, body {
-  margin:0px;
-  height:100%;
-}
-
-.box {
-  background:red;
-  height:100%;
-  position:absolute;
-  top:0px;
-  right:0px;
-  left:0px;
-  bottom:0px;
-}
-*/
-
 /* ===========================
    Typography
 =========================== */
@@ -90,7 +73,6 @@ nav a {
    Main Content
 =========================== */
 main {
-    /* padding-bottom: 60px; /* Add padding to the bottom to ensure footer does not overlap content */
     flex: 1; /* This makes the main content grow to fill the available space */
 }
 
@@ -141,16 +123,6 @@ footer nav {
 /* ===========================
    Main Photo Styles
 =========================== */
-/* .main-photo-section {
-    width: 100%; 
-    height: 400px; 
-    overflow: hidden;
-    margin: 0; 
-    padding: 0; 
-    position: relative;
-    background-color: red;
-} */
-
 .main-photo {
     width: 100%; /* Make the image take the full width of the section */
     height: 100%; /* Make the image take the full height of the section */
@@ -174,7 +146,6 @@ section {
     max-width: 800px; /* Adjust the width as needed */
     margin: 0 auto; /* Center the section */
 }
-
 
 /* General Section Styling */
 .section-one, .section-two, .section-three, .section-four, .section-faq {
@@ -234,20 +205,22 @@ section {
 
 .section-div-four {
     width: 100%;
-    margin: 0;
-    padding: 0px 30px 20px 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    padding: 0 30px;
+    box-sizing: border-box;
 }
 
 .section-div-four h1 {
-    margin: 0;
-    padding: 0;
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
     text-align: center;
-} 
+    display: block;
+}
 
 /* Specific Background Settings */
 .section-one {
@@ -257,7 +230,6 @@ section {
 
 .section-two {
    background-color: #f2f0ea; /* Light Blue */
-   /* max-height: 400px; /* Adjust the width as needed */
    height: 400px; /* Adjust the width as needed */
 }
 
@@ -278,8 +250,6 @@ section {
 .left-column, .right-column {
     width: 48%; /* Adjust the width as needed */
     padding: 20px;
-    /* background-color: #fff; /* White background for columns */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
     box-sizing: border-box;
 }
 
@@ -288,66 +258,9 @@ section {
     margin: 0 auto;
 }
 
-/* Specific Background Colors */
-/*.box-photo {
-    background-color: red; 
-    position: relative;
-    width: 100%;
-    padding: 0px 0px 0px 0px
-} */
-
-.box-photo {
-    /* background-color: red; /* Light Red */
-    position: relative; /* Allow the section to flow naturally */
-    width: 100%; /* Ensure it spans the full width */
-    padding: 0px 0px 0px 0px;
-    width: 100%; /* Ensure the section spans the full width of the page */
-    height: 400px; /* Set a fixed height for the section (adjust as needed) */
-    overflow: hidden; /* Hide any part of the image that overflows */
-    margin: 0; /* Remove any default margin */
-}
-
-.box-footer{
-    background-color: #f2f0ea; /* Light Red */
-    position: relative; /* Allow the section to flow naturally */
-    width: 100%; /* Ensure it spans the full width */
-    padding: 30px 0px 50px 0px;
-    text-align: justify;
-}
-
-.box-color-one {
-    background-color: #f2f0ea; /* Light Red */
-    position: relative; /* Allow the section to flow naturally */
-    width: 100%; /* Ensure it spans the full width */
-    padding: 0px 0px 50px 0px;
-}
-
-.box-color-two {
-    background-color: #f2f0ea; /* Light Red */
-    position: relative; /* Allow the section to flow naturally */
-    width: 100%; /* Ensure it spans the full width */
-    padding: 0px 0px 00px 0px;
-    margin: 0px 0px 60px 0px;
-}
-
-.box-color-three {
-    background: #f6f3ef; /* Light Gray */
-    position: relative; /* Allow the section to flow naturally */
-    width: 100%; /* Ensure it spans the full width */
-    padding: 0px 0px 0px 0px;
-}
-
-.box-color-four {
-    background-color: #ffffff; /* Light Red */
-    position: relative; /* Allow the section to flow naturally */
-    width: 100%; /* Ensure it spans the full width */
-    padding: 60px 0px 60px 0px;
-}
-
 /* ===========================
    Product Styles
 =========================== */
-
 .product-container {
     display: flex;
     justify-content: space-around;
@@ -361,40 +274,14 @@ section {
 .product {
     position: relative;
     width: 30%; /* Adjust the width of each product */
-    /* max-width: 300px; */
     height: 400px; /* Set a fixed height for the product container */
     overflow: hidden; /* Hide any part of the image that overflows */
     margin: 30px auto; /* Center the product if needed */
-    /* padding: 30px; */
-} 
-/*
-.product {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 0;
-    background-color: red;
-    position: relative; 
-    width: 30%;
-    padding: 0px 0px 0px 0px;
-    height: 400px;
-    overflow: hidden;
-    margin: 0;
 }
-*/
-
-/*
-.product {
-    position: relative;
-    width: 30%;
-}
-*/
 
 .product img {
     width: 100%; /* Make the image span the full width of the container */
-    /* max-width: 800px; */
     height: 100%; /* Make the image span the full height of the container */
-    /* max-height: 400px; */
     object-fit: cover; /* Ensure the image fills the container while maintaining its aspect ratio */
     object-position: center; /* Center the zoom on the image */
     display: block; /* Remove any inline spacing below the image */
@@ -408,6 +295,7 @@ section {
     right: 0;
     height: 100%;
     width: 100%;
+    z-index: 1;
 }
 
 .product:hover .overlay {
@@ -424,22 +312,24 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 80%; /* Add width to control text wrapping */
-    padding: 20px; /* Add some padding around the text */
-    box-sizing: border-box; /* Include padding in width calculation */
+    width: 90%;
+    max-width: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    line-height: 1.4;
+    /* Ensure text is above the overlay */
+    z-index: 2;
 }
 
 .product-justified {
     position: relative;
     width: 30%; /* Adjust the width of each product */
-    /* max-width: 300px; */
     height: 400px; /* Set a fixed height for the product container */
     overflow: hidden; /* Hide any part of the image that overflows */
     margin: 30px 0; /* Center the product if needed */
-    /* padding: 30px; */
 }
 
-.product-justified .text{
+.product-justified .text {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -448,14 +338,6 @@ section {
     transform: translate(-50%, -50%);
     text-align: justify;
 }
-
-/* .product-justified .li {
-    position: absolute;
-    text-align: justify;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-} */
 
 /* ===========================
    Button Styles
@@ -486,36 +368,52 @@ section {
 }
 
 /* ===========================
-   New Section Styles for Text and Image Layout
+   Box Styles
 =========================== */
-.section {
-    display: flex;
-    align-items: center; /* Vertically center content */
-    justify-content: center; /* Horizontally center content */
-    gap: 20px; /* Space between text and image */
-    margin: 20px auto; /* Center the section horizontally */
-    max-width: 1200px; /* Optional: Limit the width of the section */
-    min-height: 50vh; /* Ensure sections take up at least half the viewport height */
+.box-photo {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    height: 400px;
+    overflow: hidden;
+    margin: 0;
 }
 
-.section img {
-    max-width: 300px; /* Limit image size */
-    height: auto;
-    border-radius: 10px; /* Optional: Rounded corners */
-}
-
-.section-left {
-    flex-direction: row;
-}
-
-.section-right {
-    flex-direction: row-reverse;
-}
-
-.text {
-    max-width: 600px;
+.box-footer {
+    background-color: #f2f0ea;
+    position: relative;
+    width: 100%;
+    padding: 30px 0px 50px 0px;
     text-align: justify;
-    margin: 20px;
+}
+
+.box-color-one {
+    background-color: #f2f0ea;
+    position: relative;
+    width: 100%;
+    padding: 0px 0px 50px 0px;
+}
+
+.box-color-two {
+    background-color: #f2f0ea;
+    position: relative;
+    width: 100%;
+    padding: 0px 0px 00px 0px;
+    margin: 0px 0px 60px 0px;
+}
+
+.box-color-three {
+    background: #f6f3ef;
+    position: relative;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+
+.box-color-four {
+    background-color: #ffffff;
+    position: relative;
+    width: 100%;
+    padding: 60px 0px 60px 0px;
 }
 
 /* ===========================
@@ -601,9 +499,8 @@ button:hover {
     cursor: pointer;
     margin: 10px 0;
     padding: 10px;
-    /* background-color: #f4f4f4; */
-    background-color: #704b3e; /* Active button background color */
-    color: #fff; /* Active button text color */
+    background-color: #704b3e;
+    color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-weight: bold;
@@ -614,7 +511,7 @@ button:hover {
 }
 
 .faq-answer {
-    display: none; /* Hide answers by default */
+    display: none;
     margin: 10px 0;
     padding: 10px;
     background-color: #bfa495;
@@ -625,11 +522,11 @@ button:hover {
 }
 
 .faq-answer.hidden {
-    display: none; /* Ensure hidden answers remain hidden */
+    display: none;
 }
 
 .faq-answer:not(.hidden) {
-    display: block; /* Show answers when the hidden class is removed */
+    display: block;
 }
 
 .faq-categories {
@@ -643,30 +540,28 @@ button:hover {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #bfa495; /* Default lighter background for inactive buttons */
+    background-color: #bfa495;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-weight: bold;
-    color: #704b3e; /* Default text color */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover and active states */
+    color: #704b3e;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .faq-category-button.active {
-    background-color: #704b3e; /* Active button background color */
-    color: #fff; /* Active button text color */
+    background-color: #704b3e;
+    color: #fff;
     border-color: #704b3e;
 }
 
 .faq-category-button:hover {
-    background-color: #bc4c2a; /* Orange hover color (same as your button hover) */
-    color: #fff; /* White text on hover */
+    background-color: #bc4c2a;
+    color: #fff;
 }
 
-/* FAQ Containers */
 .faq-container.hidden {
     display: none;
 }
-
 
 /* ===========================
    Disclaimer Section
@@ -676,4 +571,4 @@ button:hover {
     font-size: 14px;
     color: #666;
     text-align: justify;
-}
+} 
