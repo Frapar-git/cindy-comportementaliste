@@ -975,6 +975,37 @@ button:hover {
     line-height: 1.7;
 }
 
+/* Disclaimer Section */
+.disclaimer-container {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+}
+
+.disclaimer-card {
+    background-color: #f8f4f1;
+    border-left: 4px solid #bc4c2a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.disclaimer-card .info-icon {
+    font-size: 1.5em;
+    color: #bc4c2a;
+}
+
+.disclaimer-card p {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #666;
+    flex: 1;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-container {
@@ -991,6 +1022,12 @@ button:hover {
 
     .info-card.contact-details {
         min-height: 300px;
+    }
+
+    .disclaimer-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
     }
 } 
 
