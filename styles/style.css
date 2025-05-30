@@ -789,7 +789,7 @@ button:hover {
     border-color: #bc4c2a;
 }
 
-.formation-card-image img {
+.formation-card-image {
     width: 100%;
     max-width: 400px;
     height: auto;
