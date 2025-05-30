@@ -710,15 +710,15 @@ button:hover {
     width: 100%;
 }
 
-.formation-grid .formation-card {
-    flex: 0 1 calc(50% - 15px);
-    max-width: calc(50% - 15px);
+/* Style spécifique pour le bouton dans la section consultation */
+.details-container .formation-section {
+    text-align: center;
 }
 
-.formation-grid .contact-button {
+.details-container .contact-button {
     display: inline-block;
+    margin-top: 30px;
     padding: 12px 24px;
-    margin: 30px auto 0;
     background-color: #704b3e;
     color: #fff;
     text-decoration: none;
@@ -728,17 +728,11 @@ button:hover {
     transition: background-color 0.3s ease;
 }
 
-.formation-grid .contact-button:hover {
+.details-container .contact-button:hover {
     background-color: #bc4c2a;
     border-color: #bc4c2a;
 }
 
-/* Conteneur pour centrer le bouton */
-.button-container {
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
 
 /* Ajustement des images dans les cartes de consultation */
 .formation-card-content img {
