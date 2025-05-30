@@ -702,12 +702,27 @@ button:hover {
 }
 
 /* Styles pour la grille de formation et le bouton */
+/* Formation Grid Styles */
 .formation-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: stretch;
     gap: 30px;
     width: 100%;
+}
+
+/* Formation Card Base Styles */
+.formation-card, .formation-intro {
+    position: relative;
+    width: 30%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Style spécifique pour le bouton dans la section consultation */
