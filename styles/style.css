@@ -702,6 +702,13 @@ button:hover {
 }
 
 /* Styles pour la grille de formation et le bouton */
+.formation-grid {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   width: 100%;
+}
+
 
 /* When there are 3 cards per row */
 .formation-grid:not(:last-child) {
