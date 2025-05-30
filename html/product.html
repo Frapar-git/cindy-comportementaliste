@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes prestations</title>
     <script src="../js/load-common.js" defer></script>
+    <script src="../js/products.js" defer></script>
 </head>
 <body>
     <div id="header-placeholder">
     </div>
-    <main>
     <main>
         <div class="section section-left">
             <img src="../assets/hug.png" alt="Another photo of Willy the cat">
@@ -21,24 +21,71 @@
                     En tant que comportementaliste féline, je vous accompagne dans la compréhension de votre compagnon à quatre pattes.
                     Que ce soit pour préparer l'arrivée d'un nouveau membre dans la famille, résoudre des conflits entre chats ou comprendre des comportements qui vous inquiètent, je vous propose une approche professionnelle et bienveillante adaptée à votre situation.
                 </p>
-                <a href="contact.html" class="button">Voir les détails</a>
+                <button class="details-button" data-details="consultation-details">Voir les détails</button>
             </div>
         </div>
+        
+        <div id="consultation-details" class="details-container hidden">
+            <h3>Détails des consultations</h3>
+            <div class="details-content">
+                <h4>Déroulement d'une consultation</h4>
+                <ul>
+                    <li>Questionnaire préalable détaillé</li>
+                    <li>Séance d'1h30 à 2h (en présentiel ou visio)</li>
+                    <li>Analyse complète de la situation</li>
+                    <li>Recommandations personnalisées</li>
+                    <li>Suivi sur 3 mois inclus</li>
+                </ul>
+
+                <h4>Tarifs</h4>
+                <ul>
+                    <li>Consultation en visio : 90€</li>
+                    <li>Consultation à domicile : 120€</li>
+                    <li>Suivi de 3 mois inclus</li>
+                </ul>
+
+                <a href="contact.html" class="contact-button">Prendre rendez-vous</a>
+            </div>
+        </div>
+
         <div class="section section-left">
             <img src="../assets/hug.png" alt="Another photo of Willy the cat">
             <div class="text">
                 <h1>Cat Sitting</h1>
                 <h2>Je garde vos chats à domicile !</h2>
                 <p>
-                    S’occuper d’un chat, ce n’est pas simplement lui remplir sa gamelle et lui faire deux caresses avant de partir.
+                    S'occuper d'un chat, ce n'est pas simplement lui remplir sa gamelle et lui faire deux caresses avant de partir.
                     En tant que professionnelle formée au comportement félin, je veille à respecter son rythme, ses besoins spécifiques et son individualité.
-                    Chaque chat est unique : c’est pourquoi je m’engage à lui offrir une présence attentive, bienveillante et adaptée à sa personnalité.
+                    Chaque chat est unique : c'est pourquoi je m'engage à lui offrir une présence attentive, bienveillante et adaptée à sa personnalité.
                 </p>
-                <a href="contact.html" class="button">Voir les détails</a>
+                <button class="details-button" data-details="catsitting-details">Voir les détails</button>
+            </div>
+        </div>
+
+        <div id="catsitting-details" class="details-container hidden">
+            <h3>Détails du Cat Sitting</h3>
+            <div class="details-content">
+                <h4>Services inclus</h4>
+                <ul>
+                    <li>Alimentation et eau fraîche</li>
+                    <li>Nettoyage de la litière</li>
+                    <li>Temps de jeu et câlins adaptés</li>
+                    <li>Administration de médicaments si nécessaire</li>
+                    <li>Compte-rendu quotidien avec photos</li>
+                </ul>
+
+                <h4>Tarifs</h4>
+                <ul>
+                    <li>Visite d'1h : 25€</li>
+                    <li>Forfait semaine (7 jours) : 150€</li>
+                    <li>Visite supplémentaire : 20€</li>
+                </ul>
+
+                <a href="contact.html" class="contact-button">Réserver une visite</a>
             </div>
         </div>
     </main>
     <div id="footer-placeholder">
     </div>
 </body>
-</html>
+</html> 
