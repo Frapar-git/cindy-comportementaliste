@@ -737,9 +737,9 @@ button:hover {
 /* Ajustement des images dans les cartes de consultation */
 .formation-card-content img {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
-    margin: 20px auto;
+    margin: 0px auto;
     display: block;
 } 
 
