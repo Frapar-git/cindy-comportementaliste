@@ -744,18 +744,6 @@ button:hover {
     align-items: center;
     gap: 15px;
     padding: 30px;
-    width: calc(33.33% - 20px);
-    min-width: 300px;
-    margin-bottom: 30px;
-    background: #f6f3ef;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 400px;
-    text-align: center;
-    font-size: 1.2em;
-    color: #704b3e;
 }
 
 .formation-intro .formation-card-logo {
@@ -813,7 +801,7 @@ button:hover {
 
 .formation-card-logo img {
     width: 100%;
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
     margin: 0px auto;
     display: block;
