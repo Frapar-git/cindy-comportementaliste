@@ -730,6 +730,7 @@ button:hover {
 
 .formation-card-logo {
     width: auto;
+    max-width: 100px;
     height: 60px;
     margin: 20px auto;
     display: block;
