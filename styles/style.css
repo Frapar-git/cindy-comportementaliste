@@ -927,39 +927,43 @@ button:hover {
     background-color: #bc4c2a;
 }
 
+/* Style commun pour tous les boutons de contact */
 .contact-button {
     display: inline-block;
-    background-color: #bc4c2a;
-    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
     text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    margin-top: 25px;
-    transition: background-color 0.3s ease;
+    color: #fff;
+    background-color: #704b3e;
+    border: 2px solid #704b3e;
+    border-radius: 0px;
     font-family: 'Qarmic sans free', sans-serif;
-    font-size: 1.1em;
+    transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
-    background-color: #704b3e;
-}
-
-.formation-card .contact-button {
-    display: inline-block;
     background-color: #bc4c2a;
-    color: white;
-    text-decoration: none;
-    padding: 0px 24px 12px 24px;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-    font-family: 'Qarmic sans free', sans-serif;
-    width: auto;
-    align-self: center;
+    border-color: #bc4c2a;
 }
 
-.formation-card .contact-button:hover {
-    background-color: #704b3e;
+/* Style spécifique pour le conteneur de la carte dans cat-sitting */
+.section-left .formation-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-left .formation-card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.section-left .formation-card-content .contact-button {
+    margin-top: auto;
+    align-self: center;
+    margin-top: 20px;
 }
 
 /* Ajustement pour les cartes dans le conteneur de détails */
