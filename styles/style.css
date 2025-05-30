@@ -1041,7 +1041,7 @@ button:hover {
     align-items: center;
     gap: 15px;
     padding: 30px;
-    width: calc(33.33% - 20px);
+    width: calc(33.33% - 65px);
     min-width: 300px;
     margin-bottom: 30px;
 }
