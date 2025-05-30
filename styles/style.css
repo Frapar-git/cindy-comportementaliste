@@ -798,6 +798,14 @@ button:hover {
     display: block;
 } 
 
+.formation-card-logo img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin: 0px auto;
+    display: block;
+} 
+
 .formation-intro {
     position: relative;
     width: 30%;
