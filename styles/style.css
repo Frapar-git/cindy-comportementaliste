@@ -701,13 +701,35 @@ button:hover {
     box-sizing: border-box;
 }
 
+/* Styles pour la grille de formation et le bouton */
 .formation-grid {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     width: 100%;
 }
+
+.formation-grid .formation-card {
+    flex: 0 1 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+}
+
+.formation-grid .contact-button {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 30px auto 0;
+    width: fit-content;
+}
+
+/* Ajustement des images dans les cartes de consultation */
+.formation-card-content img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+} 
 
 .formation-intro {
     position: relative;
