@@ -716,10 +716,28 @@ button:hover {
 }
 
 .formation-grid .contact-button {
-    flex-basis: 100%;
-    text-align: center;
+    display: inline-block;
+    padding: 12px 24px;
     margin: 30px auto 0;
-    width: fit-content;
+    background-color: #704b3e;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #704b3e;
+    border-radius: 0px;
+    font-family: 'Qarmic sans free', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.formation-grid .contact-button:hover {
+    background-color: #bc4c2a;
+    border-color: #bc4c2a;
+}
+
+/* Conteneur pour centrer le bouton */
+.button-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 /* Ajustement des images dans les cartes de consultation */
