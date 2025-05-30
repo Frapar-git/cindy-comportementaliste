@@ -789,6 +789,14 @@ button:hover {
     border-color: #bc4c2a;
 }
 
+.formation-card-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0px auto;
+    display: block;
+} 
+
 .formation-card-logo img {
     width: 100%;
     max-width: 100px;
