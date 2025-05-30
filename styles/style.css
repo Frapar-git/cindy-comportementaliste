@@ -753,7 +753,6 @@ button:hover {
 /* Formation Card Base Styles */
 .formation-card, .formation-intro {
     position: relative;
-    width: 30%;
     background: white;
     border-radius: 10px;
     overflow: hidden;
@@ -1040,14 +1039,11 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     gap: 15px;
     padding: 30px;
-    background: #f6f3ef;
-    height: 100%;
-    min-height: 400px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    min-width: 300px;
+    margin-bottom: 30px;
 }
 
 .formation-intro i:first-child {
