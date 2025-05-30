@@ -51,6 +51,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // Toggle Product Details
+    const detailsButtons = document.querySelectorAll(".details-button");
+    
+    detailsButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            // Récupérer l'ID du conteneur de détails associé
+            const detailsId = this.getAttribute("data-details");
+            const detailsContainer = document.getElementById(detailsId);
+            
+            // Masquer tous les conteneurs de détails
+            document.querySelectorAll(".details-container").forEach(container => {
+                if (container.id !== detailsId) {
+                    container.classList.add("hidden");
+                }
+            });
+            
+            // Basculer l'affichage du conteneur cliqué
+            detailsContainer.classList.toggle("hidden");
+        });
+    });
+
     // Load the header
     fetch('../html/header.html')
         .then(response => response.text())
