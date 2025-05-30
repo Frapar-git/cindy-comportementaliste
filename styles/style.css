@@ -802,10 +802,9 @@ button:hover {
 
 /* Styles pour les conteneurs de détails */
 .details-container {
-    background-color: #ffffff;
+    background-color: #f2f0ea;
     border-radius: 10px;
-    padding: 30px;
-    margin: 20px 0;
+    padding: 1px 0px 10px 0px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -816,7 +815,7 @@ button:hover {
 
 .details-container h3 {
     color: #704b3e;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: 1.8em;
