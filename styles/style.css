@@ -728,14 +728,6 @@ button:hover {
 
 /* Style for card logos */
 
-.formation-card-content img {
-    width: auto;
-    height: 300px;
-    margin: 20px auto;
-    display: block;
-    object-fit: contain;
-}
-
 .formation-card-logo {
     width: auto;
     height: 60px;
@@ -800,7 +792,7 @@ button:hover {
 /* Ajustement des images dans les cartes de consultation */
 .formation-card-content img {
     width: 100%;
-    max-width: 100px;
+    max-width: 300px;
     height: auto;
     margin: 0px auto;
     display: block;
