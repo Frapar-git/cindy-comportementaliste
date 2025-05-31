@@ -51,24 +51,36 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Toggle Product Details
+    // Toggle Product Details - Improved version
     const detailsButtons = document.querySelectorAll(".details-button");
     
     detailsButtons.forEach(button => {
         button.addEventListener("click", function() {
-            // Récupérer l'ID du conteneur de détails associé
+            // Get the details container ID
             const detailsId = this.getAttribute("data-details");
             const detailsContainer = document.getElementById(detailsId);
             
-            // Masquer tous les conteneurs de détails
+            if (!detailsContainer) {
+                console.error(`Details container with id ${detailsId} not found`);
+                return;
+            }
+
+            // If the clicked container is already visible, hide it
+            if (!detailsContainer.classList.contains("hidden")) {
+                detailsContainer.classList.add("hidden");
+                return;
+            }
+
+            // Hide all details containers
             document.querySelectorAll(".details-container").forEach(container => {
-                if (container.id !== detailsId) {
-                    container.classList.add("hidden");
-                }
+                container.classList.add("hidden");
             });
             
-            // Basculer l'affichage du conteneur cliqué
-            detailsContainer.classList.toggle("hidden");
+            // Show the clicked container
+            detailsContainer.classList.remove("hidden");
+
+            // Scroll the details container into view
+            detailsContainer.scrollIntoView({ behavior: "smooth", block: "nearest" });
         });
     });
 
