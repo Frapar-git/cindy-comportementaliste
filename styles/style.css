@@ -1365,7 +1365,7 @@ button:hover {
 }
 
 #page-title {
-    margin: 0;
+    margin: 25px;
     /* Keep your existing title styles */
 }
 
