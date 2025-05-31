@@ -492,11 +492,13 @@ section {
 
 .box-photo .main-photo {
     position: absolute;
-    width: 50%;  /* Make the image smaller */
-    height: 50%;  /* Make the image smaller */
-    object-fit: cover;
-    top: 25%;  /* Center vertically */
-    left: 25%;  /* Center horizontally */
+    width: 100%;  /* Fill container width */
+    height: 100%;  /* Fill container height */
+    object-fit: contain;  /* Show entire image without cropping */
+    object-position: center center;  /* Center the image */
+    top: 0;
+    left: 0;
+    background-color: #f2f0ea;  /* Match your site's background color */
 }
 
 .box-footer {
