@@ -1242,7 +1242,7 @@ button:hover {
 .formation-card p, 
 .formation-card li {
     color: #704b3e;
-    margin: 0 0 15px 0;  /* Increased bottom margin */
+    margin: 10px 0 15px 0;  /* Increased bottom margin */
     font-weight: 400;
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.1em;  /* Slightly larger text */
