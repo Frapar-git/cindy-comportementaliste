@@ -490,6 +490,17 @@ section {
     margin: 0;
 }
 
+.box-photo .main-photo {
+    width: 100%;
+    height: 300%;  /* Make the image 3x taller */
+    object-fit: cover;
+    object-position: top;  /* Show the top portion */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .box-footer {
     background-color: #f2f0ea;
     position: relative;
