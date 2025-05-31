@@ -1235,11 +1235,38 @@ button:hover {
     font-size: 0.9em;
 }
 
-.formation-card p {
+.formation-card p, 
+.formation-card li {
     color: #704b3e;
     margin: 0 0 10px 0;
     font-weight: 400;
     font-family: 'Cormorant Garamond', serif;
+    font-size: 1em;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.formation-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.formation-card li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.formation-card li:before {
+    content: "•";
+    color: #bc4c2a;
+    position: absolute;
+    left: 0;
+}
+
+.formation-card li:last-child {
+    margin-bottom: 0;
 }
 
 /* Button Typography */
