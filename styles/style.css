@@ -1003,8 +1003,9 @@ button:hover {
 
 .section-overlap .overlap-text {
     position: absolute;
-    bottom: -80px;
-    right: -80px;
+    bottom: 60%;  /* Position at 60% from the bottom */
+    right: 30%;   /* Position at 30% from the right */
+    transform: translate(50%, 50%);  /* Adjust the offset to center the box at the desired position */
     background-color: #f2f0ea;
     padding: 40px;
     border-radius: 15px;
@@ -1059,8 +1060,9 @@ button:hover {
     }
 
     .section-overlap .overlap-text {
-        right: -30px;
-        bottom: -40px;
+        bottom: 50%;  /* Adjust for smaller screens */
+        right: 25%;
+        transform: translate(30%, 30%);
         max-width: 90%;
         padding: 30px;
     }
@@ -1076,7 +1078,8 @@ button:hover {
         position: relative;
         right: 0;
         bottom: 0;
-        margin-top: -60px;
+        transform: translateY(-50%);  /* Just move up on mobile */
+        margin-top: 0;
         padding: 25px;
         max-width: 100%;
     }
