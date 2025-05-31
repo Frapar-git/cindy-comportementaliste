@@ -1,4 +1,9 @@
 /* ===========================
+   Font Imports
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;600&display=swap');
+
+/* ===========================
    Global Styles
 =========================== */
 html, body {
@@ -9,10 +14,8 @@ html, body {
 }
 
 body {
-    /* 
-    font-family: 'Playfair display', serif;
-    font-weight: 600;  Bold
-    */
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -20,23 +23,33 @@ body {
 }
 
 /* ===========================
-   Typography
+   Typography Base Styles
 =========================== */
-a {
-    font-family: 'Playfair display', sans-serif;
-    font-weight: 400;
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #704b3e;
+}
+
+h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #704b3e;
 }
 
 p {
-    font-family: 'Playfair display', serif;
-    font-weight: 400; /* Light */
-    text-align: justify; /* Justify text */
-    line-height: 1.2; /* Improve readability */
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.4;
+    color: #704b3e;
 }
 
-h1, h2 {
+a {
     font-family: 'Playfair Display', serif;
-    font-weight: 700; /* Bold */
+    font-weight: 400;
+    text-decoration: none;
+    color: #704b3e;
 }
 
 /* ===========================
@@ -179,7 +192,6 @@ section {
     margin: 0 0 20px 0;
     font-size: 28px;
     font-family: 'Playfair Display', serif;
-    font-weight: 700;
 }
 
 .section .text p {
@@ -707,12 +719,11 @@ button:hover {
 
 /* Styles pour la grille de formation et le bouton */
 .formation-grid {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
-   width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
 }
-
 
 /* When there are 3 cards per row */
 .formation-grid:not(:last-child) {
@@ -731,10 +742,9 @@ button:hover {
 }
 
 /* Style for card logos */
-
 .formation-card-logo {
     width: auto;
-    max-width: 150px;
+    max-width: 100px;
     height: 60px;
     margin: 20px auto;
     display: block;
@@ -770,6 +780,25 @@ button:hover {
     height: 100%;
 }
 
+.formation-card-content {
+    padding: 20px 30px 40px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Hover effect for formation cards */
+.formation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.formation-intro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 /* Style spécifique pour le bouton dans la section consultation */
 .details-container .formation-section {
     text-align: center;
@@ -793,138 +822,13 @@ button:hover {
     border-color: #bc4c2a;
 }
 
-.formation-card-image {
+/* Ajustement des images dans les cartes de consultation */
+.formation-card-content img:not(.formation-card-logo) {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
-    margin: 0px auto;
+    margin: 20px auto;
     display: block;
-} 
-
-.formation-card-logo img {
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-    margin: 0px auto;
-    display: block;
-} 
-
-.formation-intro {
-    position: relative;
-    width: 30%;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.2em;
-    background: #e8dcd4;;
-}
-
-.formation-card {
-    position: relative;
-    width: 30%;
-    min-height: 400px;
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.formation-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.formation-card-content {
-    padding: 0px 30px 40px 30px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.formation-card h2 {
-    color: #bc4c2a;
-    margin: 10px 0 10px 0;
-    font-size: 1.1em;
-}
-
-.formation-card h1 {
-    color: #704b3e;
-    margin: 0 0 15px 0;
-    font-size: 1.4em;
-}
-
-.formation-card i {
-    color: #704b3e;
-    display: block;
-    margin-bottom: 20px;
-    font-size: 0.9em;
-}
-
-.formation-card p {
-    color: #704b3e;
-    margin: 0 0 10px 0;
-    font-weight: 600;
-}
-
-.formation-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.formation-card li {
-    color: #704b3e;
-    padding-left: 15px;
-    position: relative;
-    margin-bottom: 8px;
-    line-height: 1.4;
-    text-align: justify;
-    hyphens: auto;
-}
-
-.formation-card li:before {
-    content: "•";
-    color: #bc4c2a;
-    position: absolute;
-    left: 0;
-}
-
-/* Styles spécifiques pour la carte dans details-container */
-.details-container .section-left .formation-card {
-    width: 45%;
-    margin: 0;
-    height: auto;
-}
-
-.details-container .section-left img {
-    width: 45%;
-    height: auto;
-    object-fit: contain;
-}
-
-.details-container .formation-card-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.details-container .formation-card-content i {
-    font-size: 0.9em;
-    color: #666;
-    margin: 20px 0;
-    display: block;
-    line-height: 1.4;
-} 
-
-/* ===========================
-   Details Page Product Styles
-=========================== */
-.hidden {
-    display: none !important;
 }
 
 /* Styles pour les conteneurs de détails */
@@ -945,7 +849,6 @@ button:hover {
     margin-bottom: 30px;
     text-align: center;
     font-family: 'Playfair Display', serif;
-    font-weight: 700;
     font-size: 1.8em;
 }
 
@@ -953,7 +856,6 @@ button:hover {
     color: #bc4c2a;
     margin: 20px 0 15px 0;
     font-family: 'Playfair Display', serif;
-    font-weight: 700;
     font-size: 1.4em;
 }
 
@@ -1044,71 +946,7 @@ button:hover {
 .details-container .formation-card {
     width: 45%;
     max-width: 500px;
-} 
-
-/* ===========================
-   Formation Page Styles
-=========================== */
-.formation-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 30px;
-    width: calc(33.33% - 65px);
-    min-width: 300px;
-    margin-bottom: 30px;
 }
-
-.formation-intro i:first-child {
-    font-size: 1.2em;
-    color: #704b3e;
-    text-align: center;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.formation-intro i {
-    color: #704b3e;
-    font-size: 1.2em;
-    text-align: center;
-    line-height: 1.6;
-}
-
-.formation-card-logo {
-    width: auto;
-    max-width: 150px;
-    height: 100px;
-    margin: 20px auto;
-    display: block;
-    object-fit: contain;
-}
-
-.formation-card-content {
-    padding: 20px 30px 40px 30px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} 
-
-.formation-card-content > i:not(.formation-card-logo) {
-    color: #704b3e;
-    font-style: italic;
-    margin: 10px 0;
-    font-size: 0.9em;
-}
-
-/* Hover effect for formation cards */
-.formation-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.formation-intro:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-} 
 
 /* ===========================
    Contact Page Styles
@@ -1357,25 +1195,6 @@ button:hover {
 }
 
 /* ===========================
-   Title Styles
-=========================== */
-
-.title-link {
-    text-decoration: none;
-    color: inherit; /* This keeps the original text color */
-}
-
-.title-link:hover {
-    text-decoration: none;
-    color: inherit;
-}
-
-#page-title {
-    margin: 25px;
-    /* Keep your existing title styles */
-}
-
-/* ===========================
    Disclaimer Section
 =========================== */
 .disclaimer {
@@ -1383,4 +1202,67 @@ button:hover {
     font-size: 14px;
     color: #666;
     text-align: justify;
+} 
+
+/* Formation Card Typography */
+.formation-card h1 {
+    color: #704b3e;
+    margin: 0 0 15px 0;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.formation-card h2 {
+    color: #bc4c2a;
+    margin: 10px 0 10px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.formation-card i:not(.formation-card-logo) {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #704b3e;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.formation-card p {
+    color: #704b3e;
+    margin: 0 0 10px 0;
+    font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Button Typography */
+.button,
+.contact-button,
+.details-button,
+.submit-button {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+/* FAQ Typography */
+.faq-question {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.faq-answer {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+}
+
+/* Contact Form Typography */
+.contact-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.form-group label {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 0.9em;
 } 
