@@ -964,29 +964,31 @@ button:hover {
    Overlap Page Styles
 =========================== */
 
-/* Section with overlapping text and image */
 .section-overlap {
     position: relative;
     display: flex;
-    align-items: flex-start;
+    align-items: center;  /* Changed to center */
     justify-content: space-between;
-    padding: 40px 20px;
+    padding: 60px 20px;  /* Increased top/bottom padding */
     max-width: 1200px;
     margin: 0 auto;
-    gap: 60px;
+    gap: 80px;  /* Increased gap */
 }
 
 .section-overlap .text-content {
     flex: 1;
     max-width: 600px;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Align text to the left but keep content centered */
 }
 
 .section-overlap .image-container {
     position: relative;
-    width: 45%;
-    min-width: 400px;
-    height: 600px;
+    width: 40%;  /* Reduced from 45% */
+    min-width: 350px;  /* Reduced from 400px */
+    height: 500px;  /* Reduced from 600px */
 }
 
 .section-overlap .image-container img {
@@ -998,14 +1000,15 @@ button:hover {
 
 .section-overlap .overlap-text {
     position: absolute;
-    bottom: -50px;
-    right: -50px;
-    background-color: #f2f0ea;
+    bottom: -80px;  /* Increased from -50px */
+    right: -80px;  /* Increased from -50px */
+    background-color: #f2f0ea;  /* Matches the section background */
     padding: 40px;
     border-radius: 15px;
-    max-width: 500px;
+    max-width: 450px;  /* Slightly reduced */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     z-index: 2;
+    text-align: center;  /* Center the text */
 }
 
 .section-overlap .overlap-text p {
@@ -1021,12 +1024,14 @@ button:hover {
     margin: 0 0 25px 0;
     font-size: 2em;
     font-family: 'Playfair Display', serif;
+    width: 100%;  /* Ensure full width */
 }
 
 .section-overlap .text-content p {
     margin: 0 0 20px 0;
     font-size: 1.1em;
     line-height: 1.6;
+    width: 100%;  /* Ensure full width */
 }
 
 /* Responsive adjustments */
@@ -1035,17 +1040,18 @@ button:hover {
         flex-direction: column;
         align-items: center;
         gap: 40px;
+        padding: 40px 20px;
     }
 
     .section-overlap .image-container {
         width: 100%;
-        max-width: 600px;
-        height: 500px;
+        max-width: 500px;  /* Reduced from 600px */
+        height: 400px;  /* Reduced from 500px */
     }
 
     .section-overlap .overlap-text {
-        right: -20px;
-        bottom: -30px;
+        right: -30px;  /* Adjusted for smaller screens */
+        bottom: -40px;
         max-width: 90%;
         padding: 30px;
     }
@@ -1054,14 +1060,14 @@ button:hover {
 @media (max-width: 768px) {
     .section-overlap .image-container {
         min-width: unset;
-        height: 400px;
+        height: 350px;  /* Further reduced */
     }
 
     .section-overlap .overlap-text {
         position: relative;
         right: 0;
         bottom: 0;
-        margin-top: -50px;
+        margin-top: -60px;  /* Increased from -50px */
         padding: 25px;
     }
 } 
