@@ -492,14 +492,12 @@ section {
 
 .box-photo .main-photo {
     width: 100%;
-    height: 300%;  /* Make the image 3x taller */
+    height: 200%;  /* Reduce to 2x height to show middle-to-top portion */
     object-fit: cover;
-    object-position: top;  /* Show the top portion */
+    object-position: center 33%;  /* Position to show middle-to-top portion */
     display: block;
     position: absolute;
     top: 0;
-    left: 0;
-}
 
 .box-footer {
     background-color: #f2f0ea;
