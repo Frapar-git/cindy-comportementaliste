@@ -21,7 +21,14 @@
                         Je vous recontacterai dans les plus brefs délais.
                     </p>
                 </div>
-                <form action="#" method="post" class="modern-form">
+                <!-- Updated form with FormSubmit.co -->
+                <form action="https://formsubmit.co/your-email@example.com" method="POST" class="modern-form">
+                    <!-- FormSubmit.co Configuration -->
+                    <input type="hidden" name="_next" value="https://your-website.com/thank-you.html">
+                    <input type="hidden" name="_subject" value="Nouvelle demande de contact - Comportementaliste Chat">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="true">
+                    
                     <div class="form-row">
                         <div class="form-group">
                             <label for="first-name">Prénom</label>
@@ -87,9 +94,10 @@
                     Un comportementaliste ne se substitue pas au vétérinaire. Aussi, avant tout entretien, une consultation
                     chez le vétérinaire vous est demandée afin d'écarter toute cause clinique.
                 </p>
+            </div>
         </div>
     </main>
     <div id="footer-placeholder">
     </div>
 </body>
-</html> 
+</html>
