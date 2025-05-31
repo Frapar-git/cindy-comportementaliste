@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair display', serif;
     font-weight: 600; /* Bold */
     text-align: center;
     margin: 0;
@@ -21,11 +21,11 @@ body {
    Typography
 =========================== */
 a {
-    font-family: 'Qarmic sans free', sans-serif;
+    font-family: 'Playfair display', sans-serif;
 }
 
 p {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair display', serif;
     font-weight: 300; /* Light */
     text-align: justify; /* Justify text */
     line-height: 1.2; /* Improve readability */
