@@ -492,11 +492,11 @@ section {
 
 .box-photo .main-photo {
     position: absolute;
-    width: 50%;  /* Make the image wider */
-    height: 50%;  /* Make the image taller */
+    width: 50%;  /* Make the image smaller */
+    height: 50%;  /* Make the image smaller */
     object-fit: cover;
-    top: -50%;  /* Move up to show more of the image */
-    left: -50%;  /* Center the widened image */
+    top: 25%;  /* Center vertically */
+    left: 25%;  /* Center horizontally */
 }
 
 .box-footer {
