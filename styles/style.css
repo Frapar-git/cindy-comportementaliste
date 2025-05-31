@@ -497,6 +497,7 @@ section {
     object-fit: cover;
     top: -50%;  /* Pull up to center */
     left: -50%;  /* Pull left to center */
+}
 
 .box-footer {
     background-color: #f2f0ea;
