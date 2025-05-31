@@ -494,7 +494,7 @@ section {
     width: 100%;
     height: 100%;  /* Reduce to 2x height to show middle-to-top portion */
     object-fit: cover;
-    object-position: center 33%;  /* Position to show middle-to-top portion */
+    object-position: center 50%;  /* Position to show middle-to-top portion */
     display: block;
     position: absolute;
     top: 0;
