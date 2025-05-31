@@ -485,10 +485,9 @@ section {
     position: relative;
     width: 100%;
     padding: 0;
-    height: 400px;  /* Increased height to better match image proportions */
+    height: 400px;
     overflow: hidden;
     margin: 0;
-    background-color: #f2f0ea;  /* Added background color to match theme */
 }
 
 .box-photo .main-photo {
@@ -500,7 +499,8 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 100%;  /* Ensure minimum height coverage */
+    transform: scale(0.7);  /* Unzoom the image */
+    transform-origin: center center;  /* Scale from the center */
 }
 
 .box-footer {
