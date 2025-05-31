@@ -492,14 +492,11 @@ section {
 
 .box-photo .main-photo {
     position: absolute;
-    width: 100%;  /* Fill container width */
-    height: 100%;  /* Fill container height */
-    object-fit: contain;  /* Show entire image without cropping */
-    object-position: center center;  /* Center the image */
-    top: 0;
-    left: 0;
-    background-color: #f2f0ea;  /* Match your site's background color */
-}
+    width: 200%;  /* Double the container width to maintain the same zoom level */
+    height: 200%;  /* Double the container height to maintain the same zoom level */
+    object-fit: cover;
+    top: -50%;  /* Pull up to center */
+    left: -50%;  /* Pull left to center */
 
 .box-footer {
     background-color: #f2f0ea;
