@@ -492,8 +492,8 @@ section {
 
 .box-photo .main-photo {
     position: absolute;
-    width: 200%;  /* Double the container width to maintain the same zoom level */
-    height: 200%;  /* Double the container height to maintain the same zoom level */
+    width: 100%;  /* Double the container width to maintain the same zoom level */
+    height: 100%;  /* Double the container height to maintain the same zoom level */
     object-fit: cover;
     top: -50%;  /* Pull up to center */
     left: -50%;  /* Pull left to center */
