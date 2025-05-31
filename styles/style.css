@@ -22,6 +22,11 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Hidden class - this should be at the top level of your CSS */
+.hidden {
+    display: none !important;
+}
+
 /* ===========================
    Typography Base Styles
 =========================== */
@@ -829,11 +834,6 @@ button:hover {
     height: auto;
     margin: 20px auto;
     display: block;
-}
-
-/* Hidden class - this should be at the top level of your CSS */
-.faq-container.hidden {
-    display: none !important;
 }
 
 /* Details Container Base Styles */
