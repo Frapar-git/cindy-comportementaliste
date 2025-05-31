@@ -9,8 +9,10 @@ html, body {
 }
 
 body {
+    /* 
     font-family: 'Playfair display', serif;
-    font-weight: 600; /* Bold */
+    font-weight: 600;  Bold
+    */
     text-align: center;
     margin: 0;
     padding: 0;
