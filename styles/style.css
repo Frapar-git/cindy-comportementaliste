@@ -492,13 +492,11 @@ section {
 
 .box-photo .main-photo {
     position: absolute;
-    width: 100%;
-    height: auto;  /* Let height be determined by aspect ratio */
-    max-height: none;  /* Remove any height restrictions */
-    object-fit: contain;  /* Changed from cover to contain */
-    top: 50%;  /* Position from the middle */
-    left: 50%;
-    transform: translate(-50%, -65%);  /* Center horizontally and shift up slightly */
+    width: 200%;  /* Make the image wider */
+    height: 200%;  /* Make the image taller */
+    object-fit: cover;
+    top: -50%;  /* Move up to show more of the image */
+    left: -50%;  /* Center the widened image */
 }
 
 .box-footer {
