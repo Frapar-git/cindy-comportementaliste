@@ -22,11 +22,12 @@ body {
 =========================== */
 a {
     font-family: 'Playfair display', sans-serif;
+    font-weight: 400;
 }
 
 p {
     font-family: 'Playfair display', serif;
-    font-weight: 300; /* Light */
+    font-weight: 400; /* Light */
     text-align: justify; /* Justify text */
     line-height: 1.2; /* Improve readability */
 }
@@ -176,6 +177,7 @@ section {
     margin: 0 0 20px 0;
     font-size: 28px;
     font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
 .section .text p {
@@ -941,6 +943,7 @@ button:hover {
     margin-bottom: 30px;
     text-align: center;
     font-family: 'Playfair Display', serif;
+    font-weight: 700;
     font-size: 1.8em;
 }
 
@@ -948,6 +951,7 @@ button:hover {
     color: #bc4c2a;
     margin: 20px 0 15px 0;
     font-family: 'Playfair Display', serif;
+    font-weight: 700;
     font-size: 1.4em;
 }
 
