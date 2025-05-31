@@ -485,7 +485,7 @@ section {
     position: relative;
     width: 100%;
     padding: 0;
-    height: 600px;  /* Increased height to better match image proportions */
+    height: 400px;  /* Increased height to better match image proportions */
     overflow: hidden;
     margin: 0;
     background-color: #f2f0ea;  /* Added background color to match theme */
