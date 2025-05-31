@@ -1351,6 +1351,25 @@ button:hover {
 }
 
 /* ===========================
+   Title Styles
+=========================== */
+
+.title-link {
+    text-decoration: none;
+    color: inherit; /* This keeps the original text color */
+}
+
+.title-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+#page-title {
+    margin: 0;
+    /* Keep your existing title styles */
+}
+
+/* ===========================
    Disclaimer Section
 =========================== */
 .disclaimer {
