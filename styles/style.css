@@ -776,7 +776,16 @@ button:hover {
 
 /* Formation Card Base Styles */
 .formation-card, .formation-intro {
-    height: 100%; /* Take full height of grid cell */
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .formation-card-content {
