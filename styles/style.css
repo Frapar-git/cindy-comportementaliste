@@ -1006,11 +1006,14 @@ button:hover {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px 20px 40px 20px;
-    background-color: #f2f0ea;
+    width: 100vw;  /* Full viewport width */
+    margin-left: calc(-50vw + 50%);  /* Center the section */
+    margin-right: calc(-50vw + 50%);  /* Center the section */
+    background-color: #f6f3ef;  /* Different shade for contrast */
 }
 
 .section-overlap .text-content {
@@ -1024,13 +1027,13 @@ button:hover {
 
 .section-overlap .image-container {
     position: relative;
-    width: 32%;  /* Reduced from 35% */
-    min-width: 320px;  /* Reduced from 350px */
-    height: 450px;  /* Reduced from 500px */
+    width: 32%;
+    min-width: 320px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15%;
+    margin-left: calc(15% + 50px);  /* Adjusted to account for full width */
 }
 
 .section-overlap .image-container img {
