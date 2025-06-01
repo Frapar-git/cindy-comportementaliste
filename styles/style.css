@@ -1005,13 +1005,10 @@ button:hover {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;  /* Changed from flex-start to center */
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: center;
+    max-width: none;  /* Remove max-width constraint */
+    margin: 0;  /* Remove auto margins */
     padding: 30px 20px 40px 20px;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
     background-color: #f2f0ea;
 }
 
@@ -1032,6 +1029,8 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;  /* Add max-width to container instead */
+    margin: 0 auto;  /* Center the container */
     margin-left: calc(15% + 50px);  /* Adjusted to account for full width */
 }
 
