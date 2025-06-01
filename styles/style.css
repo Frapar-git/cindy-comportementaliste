@@ -1006,14 +1006,14 @@ button:hover {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;  /* Changed from flex-start to center */
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px 20px 40px 20px;
-    width: 100vw;  /* Full viewport width */
-    margin-left: calc(-50vw + 50%);  /* Center the section */
-    margin-right: calc(-50vw + 50%);  /* Center the section */
-    background-color: #f6f3ef;  /* Different shade for contrast */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    background-color: #f2f0ea;
 }
 
 .section-overlap .text-content {
