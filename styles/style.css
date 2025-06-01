@@ -30,7 +30,13 @@ body {
 /* ===========================
    Typography Base Styles
 =========================== */
-h1, h2 {
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #704b3e;
+}
+
+h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: #704b3e;
