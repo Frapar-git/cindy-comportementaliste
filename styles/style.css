@@ -249,10 +249,14 @@ section {
     width: 100%; /* Ensure the content takes up the full width of the container */
 }
 
-.section-div-one h1{
+.section-div-one h1 {
     display: block; /* Ensure each element takes up the full width */
     margin: 0; /* Remove any default margin */
-    padding: 30px 0px 40px 0px; /* Remove any default padding */
+    padding: 30px 0px 40px 0px; /* Adjust padding for better spacing */
+    font-size: 2.5em; /* Make the text bigger */
+    width: 100%; /* Ensure it takes full width */
+    text-align: center; /* Center the heading */
+    line-height: 1.2; /* Improve readability */
 }
 
 .section-div-one p{
