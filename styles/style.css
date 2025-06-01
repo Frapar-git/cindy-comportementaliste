@@ -991,23 +991,25 @@ button:hover {
    Overlap Page Styles
 =========================== */
 
+.section-overlap-wrapper {
+    width: 100vw;  /* Full viewport width */
+    background-color: #f2f0ea;
+    margin-left: calc(-50vw + 50%);  /* Center the wrapper */
+    margin-right: calc(-50vw + 50%);  /* Center the wrapper */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    padding: 60px 0;  /* Add vertical padding */
+}
+
 .section-overlap {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #f2f0ea;  /* Match formation-section background */
-}
-
-/* Add a wrapper to ensure full-width background */
-.section-overlap-wrapper {
-    width: 100%;
-    background-color: #f2f0ea;
-    padding: 0;
-    margin: 0;
+    padding: 0 20px;
 }
 
 .section-overlap .text-content {
