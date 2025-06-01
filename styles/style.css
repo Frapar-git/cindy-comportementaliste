@@ -292,6 +292,14 @@ section {
     width: 100%;
 }
 
+.section-div-three .left-column i,
+.section-div-three .right-column i {
+    font-size: 3em;
+    color: #704b3e;
+    margin-bottom: 20px;
+    display: block;
+}
+
 .section-div-four {
     width: 100%;
     display: flex;
