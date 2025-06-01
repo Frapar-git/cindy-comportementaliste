@@ -1009,7 +1009,8 @@ button:hover {
     justify-content: flex-start; 
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 30px 20px 40px 20px;
+    background-color: #f2f0ea;
 }
 
 .section-overlap .text-content {
