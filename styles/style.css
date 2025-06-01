@@ -992,14 +992,14 @@ button:hover {
 =========================== */
 
 .section-overlap-wrapper {
-    width: 100vw;  /* Full viewport width */
+    width: 100vw;
     background-color: #f2f0ea;
-    margin-left: calc(-50vw + 50%);  /* Center the wrapper */
-    margin-right: calc(-50vw + 50%);  /* Center the wrapper */
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
     position: relative;
     left: 50%;
     right: 50%;
-    padding: 60px 0;  /* Add vertical padding */
+    padding: 100px 0;  /* Increased padding top and bottom */
 }
 
 .section-overlap {
@@ -1023,13 +1023,13 @@ button:hover {
 
 .section-overlap .image-container {
     position: relative;
-    width: 30%;
-    min-width: 300px;
-    height: 400px;
+    width: 35%;  /* Increased from 30% */
+    min-width: 350px;  /* Increased from 300px */
+    height: 500px;  /* Increased from 400px */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15%;  /* Added margin to position image slightly left of center */
+    margin-left: 15%;
 }
 
 .section-overlap .image-container img {
@@ -1041,9 +1041,9 @@ button:hover {
 
 .section-overlap .overlap-text {
     position: absolute;
-    bottom: 10%;  /* Changed from 25% to move text box lower */
-    left: 50%;    /* Changed from right to left positioning to start from center */
-    transform: translateX(0%);  /* Changed transform to only handle X-axis */
+    bottom: -50px;  /* Changed from percentage to fixed value to position below image */
+    left: 50%;
+    transform: translateX(0%);
     background-color: #f2f0ea;
     padding: 40px;
     border-radius: 15px;
