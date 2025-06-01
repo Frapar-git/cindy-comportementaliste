@@ -754,7 +754,7 @@ button:hover {
 /* Styles pour la grille de formation et le bouton */
 .formation-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 450px);
+    grid-template-columns: repeat(3, 400px);
     gap: 40px;
     justify-content: center;
     margin: 0 auto;
@@ -1400,7 +1400,7 @@ button:hover {
     justify-content: center;
     gap: 40px;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
