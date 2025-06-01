@@ -743,7 +743,7 @@ button:hover {
 
 .formation-container {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
     box-sizing: border-box;
@@ -771,7 +771,7 @@ button:hover {
 
 .formation-card {
     width: calc(33.33% - 20px);
-    min-width: 450px;
+    min-width: 400px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
