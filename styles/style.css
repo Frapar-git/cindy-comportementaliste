@@ -771,7 +771,7 @@ button:hover {
 
 .formation-card {
     width: calc(33.33% - 20px);
-    min-width: 350px;
+    min-width: 450px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
