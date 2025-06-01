@@ -754,7 +754,7 @@ button:hover {
 /* Styles pour la grille de formation et le bouton */
 .formation-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(calc((100% - 80px) / 3), 1fr));
+    grid-template-columns: repeat(auto-fit, 450px);
     gap: 40px;
     justify-content: center;
     margin: 0 auto;
@@ -774,9 +774,8 @@ button:hover {
 }
 
 .formation-card {
-    width: 100%;
-    max-width: 100%;
-    min-width: auto;
+    width: 450px;
+    max-width: 450px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
