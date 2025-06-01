@@ -999,7 +999,7 @@ button:hover {
     position: relative;
     left: 50%;
     right: 50%;
-    padding: 100px 0;  /* Increased padding top and bottom */
+    padding: 150px 0;  /* Increased padding top and bottom */
 }
 
 .section-overlap {
@@ -1023,9 +1023,9 @@ button:hover {
 
 .section-overlap .image-container {
     position: relative;
-    width: 35%;  /* Increased from 30% */
-    min-width: 350px;  /* Increased from 300px */
-    height: 500px;  /* Increased from 400px */
+    width: 32%;  /* Reduced from 35% */
+    min-width: 320px;  /* Reduced from 350px */
+    height: 450px;  /* Reduced from 500px */
     display: flex;
     justify-content: center;
     align-items: center;
