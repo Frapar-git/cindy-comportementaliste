@@ -731,6 +731,7 @@ button:hover {
     width: 100%;
     padding: 40px 0px 60px 0px;
     margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .formation-section {
@@ -738,25 +739,28 @@ button:hover {
     min-height: 400px;
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 .formation-container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
 /* Styles pour la grille de formation et le bouton */
 .formation-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 450px), 1fr));
     gap: 40px;
     justify-content: center;
     margin: 0 auto;
     width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* When there are 3 cards per row */
@@ -770,11 +774,21 @@ button:hover {
 }
 
 .formation-card {
-    width: calc(33.33% - 20px);
-    min-width: 400px;
+    width: 100%;
+    max-width: 100%;
+    min-width: auto;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+}
+
+.formation-card-content {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 /* Style for card logos */
@@ -806,21 +820,13 @@ button:hover {
 .formation-card, .formation-intro {
     position: relative;
     background: white;
-    border-radius: 15px;  /* Increased border radius */
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);  /* Softer shadow */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 450px;  /* Increased minimum height */
+    min-height: 450px;
     display: flex;
     flex-direction: column;
-    height: 100%;
-}
-
-.formation-card-content {
-    padding: 30px 35px 45px 35px;  /* Increased padding */
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
     height: 100%;
 }
 
@@ -1450,34 +1456,29 @@ button:hover {
 .formation-card h1 {
     color: #704b3e;
     margin: 0 0 20px 0;  /* Increased bottom margin */
-    font-size: 1.5em;  /* Slightly larger title */
+    font-size: clamp(1.2em, 2vw, 1.5em);
     font-weight: 700;
+    word-wrap: break-word;
 }
 
 .formation-card h2 {
     color: #bc4c2a;
     margin: 15px 0 15px 0;  /* Increased margins */
-    font-size: 1.2em;  /* Slightly larger subtitle */
+    font-size: clamp(1em, 1.5vw, 1.2em);
     font-weight: 600;
-}
-
-.formation-card i:not(.formation-card-logo) {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    color: #704b3e;
-    font-weight: 300;
-    font-size: 0.9em;
+    word-wrap: break-word;
 }
 
 .formation-card p, 
 .formation-card li {
     color: #704b3e;
-    margin: 10px 0 15px 0;  /* Increased bottom margin */
+    margin: 0 0 15px 0;  /* Increased bottom margin */
     font-weight: 400;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1em;  /* Slightly larger text */
+    font-size: clamp(0.9em, 1.3vw, 1.1em);
     line-height: 1.5;  /* Increased line height */
     text-align: justify;
+    word-wrap: break-word;
 }
 
 .formation-card ul {
@@ -1537,20 +1538,35 @@ button:hover {
 } 
 
 /* Responsive grid adjustments */
+@media (max-width: 1600px) {
+    .formation-grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    }
+}
+
 @media (max-width: 1200px) {
     .formation-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;  /* Slightly reduced gap for smaller screens */
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+        gap: 30px;
+    }
+    
+    .formation-card-content {
+        padding: 25px 15px;
     }
 }
 
 @media (max-width: 768px) {
-    .formation-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;  /* Further reduced gap for mobile */
+    .formation-container {
+        padding: 0 15px;
     }
     
-    .formation-card-content {
-        padding: 25px 30px 35px 30px;  /* Slightly reduced padding for mobile */
+    .formation-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 15px;
     }
-} 
+    
+    .formation-card {
+        margin-bottom: 20px;
+    }
+}
