@@ -1371,10 +1371,18 @@ button:hover {
    Consultation details Styles
 =========================== */
 
+
+#consultation-details .formation-container {
+    max-width: 1800px; /* Increased from typical 1200px to 1800px */
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
 #consultation-details .formation-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 60px; /* Increased gap to match the larger scale */
     width: 100%;
 }
 
