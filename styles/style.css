@@ -752,11 +752,10 @@ button:hover {
 /* Styles pour la grille de formation et le bouton */
 .formation-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;  /* Increased gap between cards */
-    width: 100%;
-    grid-auto-rows: 1fr;
-    padding: 20px 0;  /* Added padding around the grid */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 /* When there are 3 cards per row */
