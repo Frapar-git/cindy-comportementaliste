@@ -738,12 +738,12 @@ button:hover {
     min-height: 400px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .formation-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 40px;
     box-sizing: border-box;
