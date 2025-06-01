@@ -1006,7 +1006,7 @@ button:hover {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; 
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -1023,12 +1023,13 @@ button:hover {
 
 .section-overlap .image-container {
     position: relative;
-    width: 30%;  /* Reduced from 40% */
-    min-width: 300px;  /* Reduced from 350px */
-    height: 400px;  /* Reduced from 500px */
+    width: 30%;
+    min-width: 300px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 15%;  /* Added margin to position image slightly left of center */
 }
 
 .section-overlap .image-container img {
@@ -1040,14 +1041,14 @@ button:hover {
 
 .section-overlap .overlap-text {
     position: absolute;
-    bottom: 25%;
-    right: 25%;
-    transform: translate(50%, 50%);
+    bottom: 10%;  /* Changed from 25% to move text box lower */
+    left: 50%;    /* Changed from right to left positioning to start from center */
+    transform: translateX(0%);  /* Changed transform to only handle X-axis */
     background-color: #f2f0ea;
     padding: 40px;
     border-radius: 15px;
-    max-width: 800px;  /* Increased from 400px to 1200px (3x) */
-    width: 600px;  /* Added fixed width to ensure consistent size */
+    max-width: 800px;
+    width: 600px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     z-index: 2;
     text-align: center;
