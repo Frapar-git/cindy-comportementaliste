@@ -495,8 +495,8 @@ section {
     width: 100%;  /* Double the container width to maintain the same zoom level */
     height: 100%;  /* Double the container height to maintain the same zoom level */
     object-fit: cover;
-    top: -50%;  /* Pull up to center */
-    left: -50%;  /* Pull left to center */
+    top: 0%;  /* Pull up to center */
+    left: 0%;  /* Pull left to center */
 }
 
 .box-footer {
