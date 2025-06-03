@@ -1,0 +1,1574 @@
+ /* ===========================
+   Font Imports
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;600&display=swap');
+
+/* ===========================
+   Global Styles
+=========================== */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Hidden class - this should be at the top level of your CSS */
+.hidden {
+    display: none !important;
+}
+
+/* ===========================
+   Typography Base Styles
+=========================== */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #704b3e;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #704b3e;
+}
+
+h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #704b3e;
+}
+
+p {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.4;
+    color: #704b3e;
+}
+
+a {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #704b3e;
+}
+
+/* ===========================
+   Header
+=========================== */
+header {
+    background: #fdf0ea;
+    color: #704b3e;
+    padding: 10px 20px 30px 20px;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+nav a {
+    color: #704b3e;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #704b3e; /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover and active states */
+}
+
+.nav-link:hover {
+    color: #bc4c2a; /* Orange color on hover */
+}
+
+.nav-link.active {
+    color: #bc4c2a; /* Orange color for the active page */
+    font-weight: bold; /* Optional: Make the active link bold */
+}
+
+/* ===========================
+   Main Content
+=========================== */
+main {
+    flex: 1; /* This makes the main content grow to fill the available space */
+}
+
+.colored-main {
+    background-color: #f2f0ea; /* Light beige background color */
+}
+
+.padding-main {
+   padding-top: 30px;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+    background: #f6f3ef;
+    color: #704b3e;
+    padding: 10px 10px 10px 10px;
+    position: relative; /* Change from fixed to relative */
+    text-align: center;
+    padding-top: 30px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-link {
+    color: #704b3e; /* Default link color */
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.footer-link:hover {
+    color: #bc4c2a; /* Orange color on hover */
+}
+
+.footer-link.active {
+    color: #bc4c2a; /* Orange color for the active page */
+    font-weight: bold; /* Optional: Make the active link bold */
+}
+
+/* ===========================
+   Main Photo Styles
+=========================== */
+.main-photo {
+    width: 100%; /* Make the image take the full width of the section */
+    height: 100%; /* Make the image take the full height of the section */
+    object-fit: cover; /* Zoom and crop the image to fill the container */
+    display: block; /* Remove any inline spacing below the image */
+}
+
+.text-container {
+    max-width: 75%; /* Adjust the width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background for text container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
+    box-sizing: border-box;
+}
+
+/* ===========================
+   Section Styles
+=========================== */
+section {
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the section */
+}
+
+/* About page specific sections */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.section img {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.section .text {
+    width: 45%;
+    max-width: 600px;
+}
+
+.section .text h2 {
+    color: #704b3e;
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+}
+
+.section .text p {
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.section .text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Section with image on right */
+.section-left {
+    flex-direction: row;
+}
+
+/* Section with image on left */
+.section-right {
+    flex-direction: row-reverse;
+}
+
+/* Add some spacing between sections */
+.section + .section {
+    margin-top: 60px;
+}
+
+/* General Section Styling */
+.section-one, .section-two, .section-three, .section-four, .section-faq {
+    width: 100%; /* Ensure the background spans the full width */
+    margin: 0 auto; /* Center the section */
+    padding: 0; /* Remove any default padding */
+    justify-content: center; /* Center the content horizontally */
+}
+
+.section-div-one {
+    max-width: 1200px; /* Adjust to your desired content width */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px 20px 40px 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    display: block; /* Ensure the content flows as a single block */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure the content takes up the full width of the container */
+}
+
+.section-div-one h1 {
+    display: block; /* Ensure each element takes up the full width */
+    margin: 0; /* Remove any default margin */
+    padding: 30px 0px 40px 0px; /* Adjust padding for better spacing */
+    font-size: 2.35em; /* Make the text bigger */
+    width: 100%; /* Ensure it takes full width */
+    text-align: center; /* Center the heading */
+    line-height: 1.2; /* Improve readability */
+}
+
+.section-div-one p{
+    display: block; /* Ensure each element takes up the full width */
+    margin: 0; /* Remove any default margin */
+    padding: 0px 0px 15px 0px; /* Remove any default padding */
+}
+
+.section-div-one a {
+    display: block; /* Ensure each element takes up the full width */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
+.section-div-two {
+    width: 100%;
+    margin: 0;
+    padding: 0 100px;  /* Add horizontal padding */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;  /* Ensure padding is included in width calculation */
+}
+
+.section-div-three {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.section-div-three .left-column i,
+.section-div-three .right-column i {
+    font-size: 3em;
+    color: #704b3e;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.section-div-four {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.section-div-four h1 {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    display: block;
+}
+
+/* Specific Background Settings */
+.section-one {
+    background-color: #f2f0ea; /* Light Red */
+    margin-top: 0; /* Remove margin above the section */
+}
+
+.section-two {
+    background-color: #f2f0ea;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.section-three {
+    max-width: 800px; /* Adjust the width as needed */
+    background-color: #f6f3ef; /* Light gray background */
+}
+
+.section-faq {
+    background-color: #f2f0ea; /* Light Red */
+    padding-top: 20px; /* Remove margin above the section */
+}
+
+.section-four {
+    background-color: #ffffff; /* Light Blue */
+}
+
+.left-column, .right-column {
+    width: 48%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-column h1, .right-column h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px; /* Adjust the size of the emoji if needed */
+}
+
+.left-column h2, .right-column h2 {
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px; /* Add smaller font size */
+    line-height: 1.4; /* Add line height for better readability */
+}
+
+.right-column p {
+    max-width: 400px; /* Limit the text length */
+    margin: 0 auto;
+}
+
+/* ===========================
+   Product Styles
+=========================== */
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-height: 400px;
+    margin: 0; /* Remove the margin */
+    gap: 80px;
+}
+
+.product {
+    position: relative;
+    width: 30%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0; /* Remove the margin */
+}
+
+.product img {
+    width: 100%; /* Make the image span the full width of the container */
+    height: 100%; /* Make the image span the full height of the container */
+    object-fit: cover; /* Ensure the image fills the container while maintaining its aspect ratio */
+    object-position: center; /* Center the zoom on the image */
+    display: block; /* Remove any inline spacing below the image */
+}
+
+.product .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.product:hover .overlay {
+    opacity: 0.90;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    transition: 0.5s ease;
+}
+
+.product .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    line-height: 1.4;
+    /* Ensure text is above the overlay */
+    z-index: 2;
+}
+
+.product-justified {
+    position: relative;
+    width: 30%;
+    height: auto;
+    min-height: 300px;
+    overflow: visible;
+    margin: 0;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-justified:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-justified .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+}
+
+/* ===========================
+   Button Styles
+=========================== */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #704b3e;
+    border: 2px solid #704b3e; /* Brown border */
+    border-radius: 0px;
+    box-shadow: 0 0px #999;
+}
+
+.button:hover {
+    background-color: #bc4c2a;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* ===========================
+   Box Styles
+=========================== */
+.box-photo {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    height: 400px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.box-photo .main-photo {
+    position: absolute;
+    width: 100%;  /* Double the container width to maintain the same zoom level */
+    height: 100%;  /* Double the container height to maintain the same zoom level */
+    object-fit: cover;
+    top: 0%;  /* Pull up to center */
+    left: 0%;  /* Pull left to center */
+}
+
+.box-footer {
+    background-color: #f2f0ea;
+    position: relative;
+    width: 100%;
+    padding: 30px 0px 50px 0px;
+    text-align: justify;
+}
+
+.box-color-one {
+    background-color: #f2f0ea;
+    position: relative;
+    width: 100%;
+    padding: 0px 0px 50px 0px;
+}
+
+.box-color-two {
+    background-color: #f2f0ea;
+    position: relative;
+    width: 100%;
+    padding: 0px 0px 60px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.box-color-three {
+    background: #f6f3ef;
+    position: relative;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+
+.box-color-four {
+    background-color: #ffffff;
+    position: relative;
+    width: 100%;
+    padding: 60px 0px 60px 0px;
+}
+
+/* ===========================
+   Contact Form Styles
+=========================== */
+
+.contact-form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #704b3e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a3a2e;
+}
+
+/* ===========================
+   Location Section
+=========================== */
+.location h2 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.location p {
+    margin: 5px 0;
+}
+
+/* ===========================
+   FAQ Styles
+=========================== */
+.faq-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #704b3e;
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.faq-question:hover {
+    background-color: #bc4c2a;
+}
+
+.faq-answer {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e8dcd4;
+    color: #704b3e;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: normal;
+    display: block;
+}
+
+.faq-answer.hidden {
+    display: none;
+}
+
+/* FAQ answer content styling */
+.faq-answer p {
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-answer ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.faq-answer ul li {
+    margin-bottom: 5px;
+}
+
+.faq-answer ul li:last-child {
+    margin-bottom: 0;
+}
+
+.faq-categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.faq-category-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #bfa495;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #704b3e;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faq-category-button.active {
+    background-color: #704b3e;
+    color: #fff;
+    border-color: #704b3e;
+}
+
+.faq-category-button:hover {
+    background-color: #bc4c2a;
+    color: #fff;
+}
+
+.faq-container.hidden {
+    display: none;
+}
+
+/* ===========================
+   Formation Page Styles
+=========================== */
+.formation-box {
+    background-color: #f2f0ea;
+    position: relative;
+    width: 100%;
+    padding: 40px 0px 60px 0px;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.formation-section {
+    background-color: #f2f0ea;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.formation-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles pour la grille de formation et le bouton */
+.formation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    gap: 40px;
+    justify-content: center;
+    align-items: start;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    width: fit-content;
+}
+
+/* When there are 3 cards per row */
+.formation-grid:not(:last-child) {
+    justify-content: space-between;
+}
+
+/* For the last row with fewer cards */
+.formation-grid:last-child {
+    justify-content: flex-start;
+}
+
+.formation-card {
+    width: 400px;
+    max-width: 400px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.formation-card-content {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Style for card logos */
+.formation-card-logo {
+    width: auto;
+    max-width: 120px;  /* Slightly larger logos */
+    height: 70px;  /* Slightly taller logos */
+    margin: 25px auto;  /* Increased margin */
+    display: block;
+    object-fit: contain;
+}
+
+/* Formation intro icons layout */
+.formation-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 30px;
+}
+
+.formation-intro .formation-card-logo {
+    font-size: 1.5em;
+    color: #bc4c2a;
+    margin: 5px 0;
+}
+
+/* Formation Card Base Styles */
+.formation-card, .formation-intro {
+    position: relative;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Hover effect for formation cards */
+.formation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.formation-intro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style spécifique pour le bouton dans la section consultation */
+.details-container .formation-section {
+    text-align: center;
+}
+
+.details-container .contact-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #704b3e;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #704b3e;
+    border-radius: 0px;
+    font-family: 'Qarmic sans free', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.details-container .contact-button:hover {
+    background-color: #bc4c2a;
+    border-color: #bc4c2a;
+}
+
+/* Ajustement des images dans les cartes de consultation */
+.formation-card-content img:not(.formation-card-logo) {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Details Container Base Styles */
+.details-container {
+    background-color: #f2f0ea;
+    border-radius: 10px;
+    padding: 30px 0px 20px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 20px 0;
+    transition: opacity 0.3s ease;
+} 
+
+.details-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.details-container h3 {
+    color: #704b3e;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+}
+
+.details-container h4 {
+    color: #bc4c2a;
+    margin: 20px 0 15px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+}
+
+.details-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.details-container li {
+    margin: 12px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #704b3e;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1em;
+}
+
+.details-container li:before {
+    content: "•";
+    color: #bc4c2a;
+    position: absolute;
+    left: 0;
+}
+
+.details-button {
+    background-color: #704b3e;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Qarmic sans free', sans-serif;
+    font-size: 1em;
+}
+
+.details-button:hover {
+    background-color: #bc4c2a;
+}
+
+/* Style commun pour tous les boutons de contact */
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #704b3e;
+    border: 2px solid #704b3e;
+    border-radius: 0px;
+    font-family: 'Qarmic sans free', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #bc4c2a;
+    border-color: #bc4c2a;
+}
+
+/* Style spécifique pour le conteneur de la carte dans cat-sitting */
+.section-left .formation-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-left .formation-card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.section-left .formation-card-content .contact-button {
+    margin-top: auto;
+    align-self: center;
+    margin-top: 20px;
+}
+
+/* Ajustement pour les cartes dans le conteneur de détails */
+.details-container .formation-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+.details-container .formation-card {
+    width: 45%;
+    max-width: 500px;
+}
+
+/* ===========================
+   Overlap Page Styles
+=========================== */
+
+.section-overlap-wrapper {
+    width: 100vw;
+    background-color: #f2f0ea;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    position: relative;
+    left: 50%;
+    right: 50%;
+    padding: 150px 0;  /* Increased padding top and bottom */
+}
+
+.section-overlap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: none;  /* Remove max-width constraint */
+    margin: 0;  /* Remove auto margins */
+    padding: 30px 20px 40px 20px;
+    background-color: #f2f0ea;
+}
+
+.section-overlap .text-content {
+    flex: 1;
+    max-width: 600px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: calc(50% + 50px);  /* Adjusted to account for full width */
+}
+
+.section-overlap .image-container {
+    position: relative;
+    width: 32%;
+    min-width: 320px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;  /* Add max-width to container instead */
+    margin: 0 auto;  /* Center the container */
+    margin-left: calc(15% + 50px);  /* Adjusted to account for full width */
+}
+
+.section-overlap .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.section-overlap .overlap-text {
+    position: absolute;
+    bottom: -50px;  /* Changed from percentage to fixed value to position below image */
+    left: 50%;
+    transform: translateX(0%);
+    background-color: #f2f0ea;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    text-align: center;
+}
+
+.section-overlap .overlap-text p {
+    color: #704b3e;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.0em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.section-overlap h2 {
+    color: #704b3e;
+    margin: 0 0 25px 0;
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    width: 100%;  /* Ensure full width */
+}
+
+.section-overlap .text-content p {
+    margin: 0 0 20px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+    width: 100%;  /* Ensure full width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .section-overlap {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .section-overlap .text-content {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-overlap .image-container {
+        width: 100%;
+        max-width: 500px;
+        height: 400px;
+    }
+
+    .section-overlap .overlap-text {
+        bottom: 50%;  /* Adjust for smaller screens */
+        right: 25%;
+        transform: translate(30%, 30%);
+        max-width: 90%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-overlap .image-container {
+        min-width: unset;
+        height: 350px;
+    }
+
+    .section-overlap .overlap-text {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        transform: translateY(-50%);  /* Just move up on mobile */
+        margin-top: 0;
+        padding: 25px;
+        max-width: 100%;
+    }
+} 
+
+
+/* ===========================
+   Contact Page Styles
+=========================== */
+
+.contact-main {
+    background-color: #f2f0ea;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-header h1 {
+    color: #704b3e;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.contact-header p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.modern-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #704b3e;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #bc4c2a;
+}
+
+.submit-button {
+    background-color: #704b3e;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #bc4c2a;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-card.contact-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    min-height: 400px;
+}
+
+.contact-info-header h2 {
+    color: #704b3e;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 0px;
+}
+
+.contact-item .info-icon {
+    font-size: 1.5em;
+    margin: 0;
+    color: #bc4c2a;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.map-container {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+}
+
+.info-card.disclaimer {
+    background-color: #f8f4f1;
+    border-left: 4px solid #bc4c2a;
+    margin-top: auto;
+    padding: 25px;
+}
+
+.info-card.disclaimer p {
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+/* Disclaimer Section */
+.disclaimer-container {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+}
+
+.disclaimer-card {
+    background-color: #f8f4f1;
+    border-left: 4px solid #bc4c2a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.disclaimer-card .info-icon {
+    font-size: 1.5em;
+    color: #bc4c2a;
+}
+
+.disclaimer-card p {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #666;
+    flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info-section {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .info-card.contact-details {
+        min-height: 300px;
+    }
+
+    .disclaimer-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+} 
+
+/* ===========================
+   Icon Styles
+=========================== */
+/* Globe icon styling */
+.globe-icon {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* ===========================
+   Consultation details Styles
+=========================== */
+
+#consultation-details .formation-container {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#consultation-details .formation-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+#consultation-details .formation-card {
+    flex: 1;
+    max-width: 700px;
+    min-width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#consultation-details .formation-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#consultation-details h3 {
+    margin-top: 0;
+}
+
+/* Responsive adjustment */
+@media (max-width: 1400px) {
+    #consultation-details .formation-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #consultation-details .formation-card {
+        max-width: 800px;
+        min-width: auto;
+        width: 100%;
+    }
+}
+
+/* ===========================
+   Disclaimer Section
+=========================== */
+.disclaimer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666;
+    text-align: justify;
+} 
+
+/* Formation Card Typography */
+.formation-card h1 {
+    color: #704b3e;
+    margin: 0 0 20px 0;  /* Increased bottom margin */
+    font-size: clamp(1.2em, 2vw, 1.5em);
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.formation-card h2 {
+    color: #bc4c2a;
+    margin: 15px 0 15px 0;  /* Increased margins */
+    font-size: clamp(1em, 1.5vw, 1.2em);
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.formation-card p, 
+.formation-card li {
+    color: #704b3e;
+    margin: 0 0 15px 0;  /* Increased bottom margin */
+    font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(0.9em, 1.3vw, 1.1em);
+    line-height: 1.5;  /* Increased line height */
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.formation-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;  /* Increased margins */
+}
+
+.formation-card li {
+    position: relative;
+    padding-left: 25px;  /* Increased padding for bullet points */
+    margin-bottom: 12px;  /* Increased spacing between list items */
+}
+
+.formation-card li:before {
+    content: "•";
+    color: #bc4c2a;
+    position: absolute;
+    left: 0;
+}
+
+.formation-card li:last-child {
+    margin-bottom: 0;
+}
+
+/* Button Typography */
+.button,
+.contact-button,
+.details-button,
+.submit-button {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+/* FAQ Typography */
+.faq-question {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.faq-answer {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+}
+
+/* Contact Form Typography */
+.contact-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.form-group label {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 0.9em;
+} 
+
+/* Responsive grid adjustments */
+@media (max-width: 1600px) {
+    .formation-grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    }
+}
+
+@media (max-width: 1200px) {
+    .formation-grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+        gap: 30px;
+    }
+    
+    .formation-card-content {
+        padding: 25px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .formation-container {
+        padding: 0 15px;
+    }
+    
+    .formation-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 15px;
+    }
+    
+    .formation-card {
+        margin-bottom: 20px;
+    }
+}
