@@ -1089,52 +1089,7 @@ button:hover {
     width: 100%;  /* Ensure full width */
 }
 
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-    .section-overlap {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        padding: 40px 20px;
-    }
 
-    .section-overlap .text-content {
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
-
-    .section-overlap .image-container {
-        width: 100%;
-        max-width: 500px;
-        height: 400px;
-    }
-
-    .section-overlap .overlap-text {
-        bottom: 50%;  /* Adjust for smaller screens */
-        right: 25%;
-        transform: translate(30%, 30%);
-        max-width: 90%;
-        padding: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    .section-overlap .image-container {
-        min-width: unset;
-        height: 350px;
-    }
-
-    .section-overlap .overlap-text {
-        position: relative;
-        right: 0;
-        bottom: 0;
-        transform: translateY(-50%);  /* Just move up on mobile */
-        margin-top: 0;
-        padding: 25px;
-        max-width: 100%;
-    }
-} 
 
 
 /* ===========================
