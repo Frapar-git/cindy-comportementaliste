@@ -1494,6 +1494,21 @@ button:hover {
     font-size: 0.9em;
 } 
 
+@media (max-width: 1400px) {
+    .section-overlap .overlap-text {
+        position: static;
+        max-width: 400px;
+        width: 80%;
+        margin: 30px auto 0;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .section-overlap .overlap-text p {
+        text-align: justify;
+    }
+}
+
 /* Responsive grid adjustments */
 @media (max-width: 1300px) {
     .formation-grid {
@@ -1517,21 +1532,6 @@ button:hover {
         height: auto;
         min-width: unset;
         margin-left: 0;
-    }
-
-    .section-overlap .overlap-text {
-        position: static;
-        width: 80%;
-        max-width: 400px;
-        margin: 30px auto 0;
-        padding: 20px;
-        border-radius: 8px;
-        transform: none;
-        box-shadow: none;
-    }
-
-    .section-overlap .overlap-text p {
-        text-align: justify;
     }
 }
 
