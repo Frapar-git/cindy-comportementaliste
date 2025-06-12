@@ -1542,30 +1542,51 @@ button:hover {
 /* Responsive grid adjustments */
 @media (max-width: 1600px) {
     .formation-grid {
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .section-overlap {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .section-overlap .image-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .section-overlap .overlap-text {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto 0;
+        transform: none;
+        background-color: #fdf0ea;
+        padding: 20px;
+        border-radius: 8px;
     }
 }
 
 @media (max-width: 1200px) {
     .formation-grid {
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
-        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .formation-card-content {
-        padding: 25px 15px;
+        padding: 15px;
     }
 }
 
 @media (max-width: 768px) {
     .formation-container {
-        padding: 0 15px;
+        padding: 10px;
     }
     
     .formation-grid {
         grid-template-columns: 1fr;
-        gap: 25px;
-        padding: 15px;
+        gap: 20px;
     }
     
     .formation-card {
