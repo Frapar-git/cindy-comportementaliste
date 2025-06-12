@@ -1549,12 +1549,24 @@ button:hover {
     .section-overlap {
         flex-direction: column;
         padding: 20px;
+        align-items: center;
+        justify-content: center;
     }
 
     .section-overlap .image-container {
         width: 100%;
         max-width: 800px;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-overlap .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
     }
 
     .section-overlap .overlap-text {
@@ -1566,6 +1578,14 @@ button:hover {
         background-color: #fdf0ea;
         padding: 20px;
         border-radius: 8px;
+        left: auto;
+        right: auto;
+        text-align: center;
+    }
+
+    .section-overlap .overlap-text p {
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
