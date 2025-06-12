@@ -1545,7 +1545,9 @@ button:hover {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
+}
 
+@media (max-width: 1000px) {
     .section-overlap {
         flex-direction: column;
         padding: 20px;
@@ -1555,7 +1557,7 @@ button:hover {
     .section-overlap .image-container {
         position: static;
         width: 100%;
-        max-width: 600px;
+        max-width: 400px;
         margin: 0 auto;
         height: auto;
         min-width: unset;
@@ -1574,7 +1576,7 @@ button:hover {
     }
 
     .section-overlap .overlap-text p {
-        text-align: center;
+        text-align: justify;
     }
 }
 
