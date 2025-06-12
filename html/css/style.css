@@ -1567,12 +1567,12 @@ button:hover {
     }
 
     .section-overlap .image-container {
-        position: static; 
+        /* position: static; 
         width: 100%; 
         margin: 0 auto;
         height: auto;
         min-width: unset;
-        margin-left: 0;
+        margin-left: 0; */
         max-width: 300px;
     }
 }
