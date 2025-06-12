@@ -1496,8 +1496,8 @@ button:hover {
 
 @media (max-width: 1400px) {
     .section-overlap .overlap-text {
-        position: static;
-        max-width: 400px;
+        /* position: static; */
+        max-width: 500px;
         width: 80%;
         margin: 30px auto 0;
         padding: 20px;
@@ -1515,6 +1515,23 @@ button:hover {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
+
+    .section-overlap .overlap-text {
+        max-width: 450px;
+    }
+ 
+}
+
+@media (max-width: 1200px) {
+     .section-overlap .overlap-text {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 1100px) {
+     .section-overlap .overlap-text {
+        max-width: 350px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -1525,13 +1542,13 @@ button:hover {
     }
 
     .section-overlap .image-container {
-        position: static;
-        width: 100%;
-        max-width: 400px;
+        /* position: static; 
+        width: 100%; 
         margin: 0 auto;
         height: auto;
         min-width: unset;
-        margin-left: 0;
+        margin-left: 0; */
+        max-width: 300px;
     }
 }
 
