@@ -1352,7 +1352,7 @@ button:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .contact-container {
         flex-direction: column;
     }
