@@ -1053,9 +1053,9 @@ button:hover {
 
 .section-overlap .overlap-text {
     position: absolute;
-    bottom: -50px;  /* Changed from percentage to fixed value to position below image */
-    left: 50%;
-    transform: translateX(0%);
+    bottom: 0px;  /* Changed from percentage to fixed value to position below image */
+    /* left: 35%; */
+    transform: translateX(30%);
     background-color: #f2f0ea;
     padding: 40px;
     border-radius: 15px;
@@ -1089,7 +1089,8 @@ button:hover {
     width: 100%;  /* Ensure full width */
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments 
+/*
 @media (max-width: 1200px) {
     .section-overlap {
         flex-direction: column;
@@ -1111,7 +1112,7 @@ button:hover {
     }
 
     .section-overlap .overlap-text {
-        bottom: 50%;  /* Adjust for smaller screens */
+        bottom: 50%;
         right: 25%;
         transform: translate(30%, 30%);
         max-width: 90%;
@@ -1129,12 +1130,13 @@ button:hover {
         position: relative;
         right: 0;
         bottom: 0;
-        transform: translateY(-50%);  /* Just move up on mobile */
+        transform: translateY(-50%);
         margin-top: 0;
         padding: 25px;
         max-width: 100%;
     }
 } 
+*/
 
 
 /* ===========================
@@ -1546,7 +1548,37 @@ button:hover {
     }
 }
 
+@media (max-width: 1400px) {
+    .section-overlap .overlap-text {
+        /* position: static; */
+        max-width: 700px;
+        width: 80%;
+        margin: 30px auto 0;Add commentMore actions
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .section-overlap .overlap-text p {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 1300px) {
+      .section-overlap .overlap-text {
+        max-width: 600px;
+      }
+ 
+      .formation-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+}
+
 @media (max-width: 1200px) {
+      .section-overlap .overlap-text {
+        max-width: 500px;
+      }
+ 
     .formation-grid {
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
         gap: 30px;
@@ -1557,6 +1589,11 @@ button:hover {
     }
 }
 
+@media (max-width: 1100px) {
+     .section-overlap .overlap-text {
+        max-width: 400px;
+}
+
 @media (max-width: 1000px) {
     .product-container {
         display: block;
@@ -1565,25 +1602,75 @@ button:hover {
     .product {
        width: 100%;
        margin: 0px 0px 20px 0px;
-   }
+    }
 
     .box-color-two {
        padding: 0px 0px 870px 0px;
     }
+
+     .section-overlap {
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+     }   
+
+     .section-overlap .image-container {
+        /* position: static; 
+        width: 100%; 
+        margin: 0 auto;
+        height: auto;
+        min-width: unset;
+        margin-left: 0; */
+        max-width: 300px;
+      }
+ 
+     .box-color-two {
+       padding: 0px 0px 870px 0px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .formation-container {
-        padding: 0 15px;
+        padding: 10px;
     }
     
     .formation-grid {
         grid-template-columns: 1fr;
-        gap: 25px;
-        padding: 15px;
+        gap: 20px;
+        /* padding: 15px; */
     }
     
     .formation-card {
         margin-bottom: 20px;
+    }
+
+    .section-overlap .image-container {
+        /* position: static; 
+        width: 100%; 
+        margin: 0 auto;
+        height: auto;
+        min-width: unset;
+        margin-left: 0; */
+        max-width: 300px;
+    }
+
+    .section-overlap .overlap-text {
+    transform: translateX(0%);
+    margin: 0px 0px -50px -40px;
+    }
+ 
+}
+
+@media (max-width: 650px) {
+    .section-overlap .image-container {
+        position: none;
+        width: 100%;
+        height: 250px;
+        transform: translatey(-20%);
+        margin: 0px 30px 0px 0px;
+    }
+
+    .section-overlap {
+        height: 350px;
     }
 }
