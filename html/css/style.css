@@ -1600,8 +1600,8 @@ button:hover {
     }
  
     .product {
-       width: 100%;
-       margin: 0px 0px 20px 0px;
+       width: 60%;
+       margin: 15px auto;
     }
 
     .box-color-two {
@@ -1672,5 +1672,9 @@ button:hover {
 
     .section-overlap {
         height: 350px;
+    }
+ 
+     .product {
+       width: 100%;
     }
 }
