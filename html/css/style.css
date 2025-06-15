@@ -1584,6 +1584,7 @@ button:hover {
     align-items: center;
     position: relative;
     margin-bottom: 20px;
+    min-height: 60px;
 }
 
 .title-link {
@@ -1592,6 +1593,9 @@ button:hover {
     transform: translateX(-50%);
     text-decoration: none;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .title-link h1 {
@@ -1607,6 +1611,7 @@ button:hover {
     cursor: pointer;
     padding: 10px;
     z-index: 1001;
+    position: relative;
 }
 
 .hamburger-line {
@@ -1623,6 +1628,7 @@ button:hover {
     justify-content: center;
     gap: 20px;
     margin-top: 10px;
+    align-items: center;
 }
 
 @media (max-width: 800px) {
@@ -1670,6 +1676,16 @@ button:hover {
         padding: 8px 0;
         width: 100%;
         text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-container {
+        padding: 0 40px;
+    }
+
+    .title-link h1 {
+        font-size: 1.2em;
     }
 }
 
