@@ -1663,6 +1663,20 @@ button:hover {
  
 }
 
+@media (max-width: 750px) {
+    .section-left, section-right {
+    display: block;
+    }
+
+    .section-left .text, section-right .text {
+     width: 75%;
+     margin: 50px auto;
+
+    .section-left .formation-card {
+     margin: 20px auto;
+    }
+}
+ 
 @media (max-width: 650px) {
     .section-overlap .image-container {
         position: none;
