@@ -1541,12 +1541,13 @@ button:hover {
     font-size: 0.9em;
 } 
 
-/* Responsive grid adjustments */
+/* Responsive grid adjustments 
 @media (max-width: 1600px) {
     .formation-grid {
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
     }
 }
+*/
 
 @media (max-width: 1400px) {
     .section-overlap .overlap-text {
