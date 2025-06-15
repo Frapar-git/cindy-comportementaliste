@@ -1053,9 +1053,9 @@ button:hover {
 
 .section-overlap .overlap-text {
     position: absolute;
-    bottom: 0px;  /* Changed from percentage to fixed value to position below image */
-    /* left: 35%; */
-    transform: translateX(30%);
+    bottom: -50px;  /* Changed from percentage to fixed value to position below image */
+    left: 50%;
+    transform: translateX(0%);
     background-color: #f2f0ea;
     padding: 40px;
     border-radius: 15px;
@@ -1089,7 +1089,52 @@ button:hover {
     width: 100%;  /* Ensure full width */
 }
 
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .section-overlap {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 20px;
+    }
 
+    .section-overlap .text-content {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-overlap .image-container {
+        width: 100%;
+        max-width: 500px;
+        height: 400px;
+    }
+
+    .section-overlap .overlap-text {
+        bottom: 50%;  /* Adjust for smaller screens */
+        right: 25%;
+        transform: translate(30%, 30%);
+        max-width: 90%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-overlap .image-container {
+        min-width: unset;
+        height: 350px;
+    }
+
+    .section-overlap .overlap-text {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        transform: translateY(-50%);  /* Just move up on mobile */
+        margin-top: 0;
+        padding: 25px;
+        max-width: 100%;
+    }
+} 
 
 
 /* ===========================
@@ -1494,105 +1539,51 @@ button:hover {
     font-size: 0.9em;
 } 
 
-@media (max-width: 1400px) {
-    .section-overlap .overlap-text {
-        /* position: static; */
-        max-width: 700px;
-        width: 80%;
-        margin: 30px auto 0;
-        padding: 20px;
-        border-radius: 8px;
-    }
-
-    .section-overlap .overlap-text p {
-        text-align: justify;
-    }
-}
-
 /* Responsive grid adjustments */
-@media (max-width: 1300px) {
+@media (max-width: 1600px) {
     .formation-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
     }
-
-    .section-overlap .overlap-text {
-        max-width: 600px;
-    }
- 
 }
 
 @media (max-width: 1200px) {
-     .section-overlap .overlap-text {
-        max-width: 500px;
+    .formation-grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+        gap: 30px;
     }
-}
-
-@media (max-width: 1100px) {
-     .section-overlap .overlap-text {
-        max-width: 400px;
+    
+    .formation-card-content {
+        padding: 25px 15px;
     }
 }
 
 @media (max-width: 1000px) {
-    .section-overlap {
-        flex-direction: column;
-        padding: 20px;
-        width: 100%;
+    .product-container {
+        display: block;
     }
+ 
+    .product {
+       width: 100%;
+       margin: 0px 0px 20px 0px;
+   }
 
-    .section-overlap .image-container {
-        /* position: static; 
-        width: 100%; 
-        margin: 0 auto;
-        height: auto;
-        min-width: unset;
-        margin-left: 0; */
-        max-width: 300px;
+    .box-color-two {
+       padding: 0px 0px 870px 0px;
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
     .formation-container {
-        padding: 10px;
+        padding: 0 15px;
     }
     
     .formation-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 25px;
+        padding: 15px;
     }
     
     .formation-card {
         margin-bottom: 20px;
-    }
-
-    .section-overlap .image-container {
-        /* position: static; 
-        width: 100%; 
-        margin: 0 auto;
-        height: auto;
-        min-width: unset;
-        margin-left: 0; */
-        max-width: 300px;
-    }
- 
-    .section-overlap .overlap-text {
-    transform: translateX(0%);
-    margin: 0px 0px -50px -40px;
-    }
- 
-}
-
-@media (max-width: 650px) {
-    .section-overlap .image-container {
-        position: none;
-        width: 100%;
-        height: 250px;
-        transform: translatey(-20%);
-        margin: 0px 30px 0px 0px;
-    }
-
-    .section-overlap {
-        height: 350px;
     }
 }
