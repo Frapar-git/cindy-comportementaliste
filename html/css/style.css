@@ -1660,6 +1660,14 @@ button:hover {
     transform: translateX(0%);
     margin: 0px 0px -50px -40px;
     }
+
+    .faq-answer {
+     margin: 20px 10px;
+    }
+ 
+    .faq-question {
+     margin: 20px 10px;
+    }
  
 }
 
