@@ -103,33 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     link.classList.add('active'); // Add the 'active' class to the matching link
                 }
             });
-
-            // Initialize hamburger menu functionality
-            const hamburger = document.querySelector('.hamburger');
-            const navMenu = document.querySelector('.nav-menu');
-            const navLinks = document.querySelectorAll('.nav-link');
-
-            // Toggle menu
-            hamburger.addEventListener('click', function() {
-                hamburger.classList.toggle('active');
-                navMenu.classList.toggle('active');
-            });
-
-            // Close menu when clicking a link
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    hamburger.classList.remove('active');
-                    navMenu.classList.remove('active');
-                });
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
-                    hamburger.classList.remove('active');
-                    navMenu.classList.remove('active');
-                }
-            });
         });
 
     // Load the footer
