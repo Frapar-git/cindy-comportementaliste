@@ -1666,6 +1666,7 @@ button:hover {
 @media (max-width: 750px) {
     .section-left, section-right {
     display: block;
+    margin: -30px auto;
     }
 
     .section-left .text, section-right .text {
@@ -1675,6 +1676,14 @@ button:hover {
  
     .section-left .formation-card {
      margin: 20px auto;
+    }
+
+    .details-container .formation-card {
+     width: 75%;
+    }
+
+    .details-container {
+     padding: 1px 0px 20px 0px;
     }
 }
  
