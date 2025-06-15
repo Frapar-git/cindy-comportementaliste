@@ -1053,9 +1053,9 @@ button:hover {
 
 .section-overlap .overlap-text {
     position: absolute;
-    bottom: -50px;  /* Changed from percentage to fixed value to position below image */
-    left: 50%;
-    transform: translateX(0%);
+    bottom: 0px;  /* Changed from percentage to fixed value to position below image */
+    /* left: 35%; */
+    transform: translateX(30%);
     background-color: #f2f0ea;
     padding: 40px;
     border-radius: 15px;
@@ -1575,6 +1575,11 @@ button:hover {
         margin-left: 0; */
         max-width: 300px;
     }
+ 
+    .section-overlap .overlap-text {
+    transform: translateX(0%);
+    }
+ 
 }
 
 @media (max-width: 650px) {
