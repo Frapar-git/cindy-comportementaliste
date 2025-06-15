@@ -1359,6 +1359,7 @@ button:hover {
 
     .contact-info-section {
         width: 100%;
+        margin-top: 150px;
     }
 
     .form-row {
@@ -1373,8 +1374,29 @@ button:hover {
         flex-direction: column;
         text-align: center;
         gap: 15px;
+        transform: translateY(-950px);
     }
 } 
+
+@media (max-width: 800px) {
+    .disclaimer-card {
+        transform: translateY(-1000px);
+    }
+
+    .contact-info-section {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .disclaimer-card {
+        transform: translateY(-1050px);
+    }
+
+    .contact-info-section {
+        margin-top: 250px;
+    }
+}
 
 /* ===========================
    Icon Styles
