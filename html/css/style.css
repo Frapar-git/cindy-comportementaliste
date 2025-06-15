@@ -1664,12 +1664,22 @@ button:hover {
 }
 
 @media (max-width: 750px) {
-    .section-left, section-right {
+    .section-left {
     display: block;
     /* margin: -30px auto; */
     }
 
-    .section-left .text, section-right .text {
+    section-right {
+    display: block;
+    /* margin: -30px auto; */
+    }
+
+    .section-left .text {
+     width: 75%;
+     margin: 50px auto;
+    }
+
+    section-right .text {
      width: 75%;
      margin: 50px auto;
     }
