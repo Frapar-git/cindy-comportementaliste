@@ -1671,7 +1671,8 @@ button:hover {
     .section-left .text, section-right .text {
      width: 75%;
      margin: 50px auto;
-
+    }
+ 
     .section-left .formation-card {
      margin: 20px auto;
     }
