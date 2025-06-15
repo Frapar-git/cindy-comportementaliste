@@ -1386,6 +1386,10 @@ button:hover {
     .contact-info-section {
         margin-top: 200px;
     }
+
+    .disclaimer-container {
+        margin: 40px auto -250px 0;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1395,6 +1399,10 @@ button:hover {
 
     .contact-info-section {
         margin-top: 250px;
+    }
+
+    .disclaimer-container {
+        margin: 40px auto -300px 0;
     }
 }
 
