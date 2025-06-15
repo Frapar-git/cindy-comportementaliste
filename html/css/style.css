@@ -1603,6 +1603,7 @@ button:hover {
     .product {
        width: 60%;
        margin: 15px auto;
+       min-width: 450px;
     }
 
     .box-color-two {
@@ -1677,5 +1678,6 @@ button:hover {
  
      .product {
        width: 100%;
+       min-width: 60%;
     }
 }
