@@ -1557,6 +1557,16 @@ button:hover {
     }
 }
 
+@media (max-width: 1000px) {
+    .product-container {
+        display: block;
+    }
+ 
+    .product {
+       width: 100%;
+   }
+}
+
 @media (max-width: 768px) {
     .formation-container {
         padding: 0 15px;
