@@ -1578,6 +1578,20 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.title-link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+.title-link h1 {
+    margin: 0;
+    font-size: 1.5em;
+    white-space: nowrap;
 }
 
 .hamburger {
