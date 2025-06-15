@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Load the header
-    fetch('/header.html')
+    fetch('header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-placeholder').innerHTML = data;
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Initialize hamburger menu functionality
             const hamburger = document.querySelector('.hamburger');
             const navMenu = document.querySelector('.nav-menu');
-            const navLinks = document.querySelectorAll('.nav-link');
+            const menuLinks = document.querySelectorAll('.nav-link');
 
             // Toggle menu
             hamburger.addEventListener('click', function() {
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             // Close menu when clicking a link
-            navLinks.forEach(link => {
+            menuLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     hamburger.classList.remove('active');
                     navMenu.classList.remove('active');
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     // Load the footer
-    fetch('/footer.html')
+    fetch('footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer-placeholder').innerHTML = data;
@@ -148,4 +148,4 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         });
-});
+}); 
