@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Set the page title
             const pageTitle = document.title;
-            document.getElementById('page-title').textContent = "Cindy - Comportementaliste";
+            document.getElementById('page-title').textContent = "Cindy - Comportementaliste félin";
 
             // Highlight the active link in the header
             const currentPage = window.location.pathname.split("/").pop(); // Get the current page filename
